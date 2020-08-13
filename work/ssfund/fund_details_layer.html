@@ -1,0 +1,1550 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="viewport" content="initial-scale=1.0,user-scalable=no,maximum-scale=1.5,width=device-width,minimal-ui" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>삼성자산운용 펀드솔루션</title>
+		<meta name="keywords" content="펀드, 펀드솔루션, fund, 삼성자산운용 펀드솔루션, 펀드, 투자, 부자, 금융, 재테크, 환율, 삼성, 연금, 노후대비, FP, 적립식투자" />
+		<meta name="description" content="세상의 모든 투자, 쉽고 편하게, 삼성자산운용 펀드솔루션" />
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500&amp;display=swap&amp;subset=korean" />
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/common.css" />
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+	<body>
+		<!--skip 네비-->
+		<div id="skip">
+			<a href="#gnb">주메뉴 바로가기</a>
+			<a href="#contents">본문 바로가기</a>
+			<a href="#footer">사이트 정보 바로가기</a>
+		</div>
+		<div id="wrap">
+			<!-- 상단 공지-->
+			<!-- [D] 서브페이지 일 경우 sub 클래스 추가-->
+			<!-- header-->
+			<header class="sub" id="header">
+				<div class="inner">
+					<article class="header_main inner_content">
+						<h1 class="title_sub_page"><a href="#;">상품 상세 정보</a></h1>
+						<a class="btn_sub_back" href="ci.html">
+							<i class="ico_back" aria-hidden="true"></i>
+							<span class="blind">뒤로가기</span>
+						</a>
+						<!-- 우측 버튼 2종 영역-->
+						<!-- [D] btn_open_form 클릭시  header_btn_wrap 에 on 클래스로 보여짐이 제어됨-->
+						<div class="header_btn_wrap">
+							<button class="header_search xs btn_search btn_open_form"><span class="blind">검색</span></button>
+							<div class="header_search_form">
+								<label class="blind" for="hd_input_form">검색어 입력</label>
+								<input class="del_toggle" type="text" id="hd_input_form" placeholder="검색어를 입력해주세요. " />
+								<button class="btn_input_delete hide"><i class="blind">검색어 삭제후 다시 입력하기</i></button>
+							</div>
+							<button class="header_search xs btn_search btn_form_search"><span class="blind">검색</span></button>
+							<button class="header_search_close btn_close"><span class="blind">검색영역 닫기</span></button>
+							<!-- [D] 해당버튼 클릭시 .gnb_wrap 에 on 클래스가 추가됨-->
+							<button class="header_all_meun xs btn_hambuger">
+								<i aria-hidden="true"></i>
+								<span class="blind">전체메뉴 보기</span>
+							</button>
+						</div>
+						<!-- 주메뉴 영역-->
+						<div class="gnb_wrap">
+							<!-- 상단-->
+							<div class="gnb_top">
+								<section class="user_menu clear inner_content">
+									<h1 class="blind">사용자 메뉴</h1>
+									<a class="link_main fl" href="#;"><span class="blind">메인 바로가기</span></a>
+									<ul class="list_user_menu fl">
+										<li><a href="#;">로그인</a></li>
+										<li><a href="#;">회원가입</a></li>
+										<li><a href="#;">MY 리스트</a></li>
+									</ul>
+									<!-- 사용자메뉴 버튼-->
+									<div class="user_menu_btn fr">
+										<a class="user_setting" href="#;"><span class="blind">설정 바로가기</span></a>
+										<!-- [D] 해당버튼 클릭시 .gnb_wrap 에 on 클래스가 제거됨-->
+										<button class="btn_close"><span class="blind">닫기</span></button>
+									</div>
+								</section>
+								<section class="gnb_search_form">
+									<h1 class="blind">검색영역</h1>
+									<div class="basic_search_wrap left">
+										<label class="blind" for="gnbSearch">검색어 입력하기</label>
+										<input class="common_search_input" type="text" placeholder="검색어를 입력해주세요." id="gnbSearch" />
+										<div class="btn_wrap">
+											<button class="gnb_search_del hide"><span class="blind">내용삭제</span></button>
+											<button class="btn_search xs"><span class="blind">검색</span></button>
+										</div>
+									</div>
+								</section>
+								<section class="gnb_fund_wrap inner_content">
+									<ul class="list_frame_content">
+										<!--prettier-ignore-->
+										<li><a class="blue" href="#;">테마별<br>펀드</a></li>
+										<!--prettier-ignore-->
+										<li><a class="blue" href="#;">국가별<br/>보기</a></li>
+										<!--prettier-ignore-->
+										<li><a class="blue" href="#;">노후대비<br/>연금펀드</a></li>
+										<!--prettier-ignore-->
+										<li><a class="view_all_fund" href="#;">모두<br/>보기</a></li>
+									</ul>
+								</section>
+								<!-- 배너-->
+								<a class="gnb_banner_wrap" href="#;"><img src="img/@tmp_banner_gnb.jpg" alt="펀드선택 결정장애는 펀드자판기로 해결하세요!" /></a>
+							</div>
+							<ul class="gub_list">
+								<li>
+									<a href="#;"><span class="name_gnb">은퇴솔루션</span></a>
+								</li>
+								<li class="inner_depth on">
+									<a href="#;"><span class="name_gnb gnb_new">지식PLUS</span></a>
+									<ul class="gnb_depth">
+										<li><a href="#;">펀드스토리</a></li>
+										<li><a href="#;">출퇴근 5분 경제</a></li>
+										<li><a href="#;">투자탐구생활</a></li>
+										<li><a href="#;">펀드TV</a></li>
+										<li><a href="#;">SERICEO</a></li>
+									</ul>
+								</li>
+								<li class="inner_depth">
+									<a href="#;"><span class="name_gnb">이벤트</span></a>
+									<ul class="gnb_depth">
+										<li><a href="#;">이벤트</a></li>
+										<li><a href="#;">사용후기</a></li>
+										<li><a href="#;">사용인증</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="#;"><span class="name_gnb">공지사항</span></a>
+								</li>
+							</ul>
+						</div>
+						<hr />
+					</article>
+				</div>
+			</header>
+			<!--비쥬얼 영역-->
+			<!-- main-->
+			<main id="container">
+				<article class="content_main_wrap">
+					<h2 class="blind">상품정보</h2>
+					<div class="inner_content">
+						<!-- 정보영역 묶음 wrap-->
+						<div class="detail_fund_wrap">
+							<!-- 라벨-->
+							<ul class="list_inline_label xs">
+								<li><span class="btn_basic square line_blue xs">혼합형</span></li>
+								<li class="span"><button class="btn_basic square xs">글로벌 공격적자산배분</button></li>
+								<li class="span"><button class="btn_basic square xs">인터넷 전용상품</button></li>
+							</ul>
+							<!-- 상품명-->
+							<h3 class="product_title">
+								<span class="blind">상품명</span>
+								미래에셋퇴직플랜BRICs 업종대표40증권자투자신탁 1(채권혼합)종류C-P2e
+							</h3>
+							<!--옵션영역-->
+							<div class="pdt_option_area">
+								<div class="basic_select_box line product">
+									<label for="select1">
+										<span class="name_select">Class C-Rpe</span>
+										<select class="basic_select" name="" id="select1">
+											<option value="Class C-Rpe">Class C-Rpe</option>
+											<option value="Class Cpe(퇴직연금)">Class Cpe(퇴직연금)</option>
+										</select>
+										<i class="ico_arrow" aria-hidden="true"></i>
+									</label>
+								</div>
+								<div class="pdt_user_btn">
+									<button class="icon_btn_default btn_like"><span class="blind">비교</span></button>
+									<button class="icon_btn_default on"><span class="text_btn">비교</span></button>
+								</div>
+							</div>
+							<!-- 소셜공유-->
+							<ul class="list_social">
+								<li><button class="sns_kakao">카카오톡 공유</button></li>
+								<li><button class="sns_link">URL 복사</button></li>
+							</ul>
+							<!-- 상세정보-->
+							<article class="detail_info_box">
+								<h1 class="blind">상세정보</h1>
+								<!--기준-->
+								<p class="info_standard">
+									<span class="blind">기준날짜</span>
+									<span>2019년 07월 23일 기준</span>
+								</p>
+								<!-- 정보 리스트-->
+								<ul class="list_pdt_detail">
+									<li class="ico_coin">
+										<div class="info_wrap">
+											<strong class="title_info">기준가</strong>
+											<!-- [D] 숫자 = em 태그
+      큰글자 = i 태그
+      작은글자 = small태그-->
+											<p class="txt_info">
+												<!--prettier-ignore-->
+												<em>1,024,20<small>원</small></em>
+												<!--prettier-ignore-->
+												<!-- [D] 하락일 경우 down 클래스, 상승일경우 up 클래스 추가-->
+												<span class="label_state_price down">
+													-3.23
+													<i class="blind">하락</i>
+												</span>
+											</p>
+										</div>
+									</li>
+									<li class="ico_grap">
+										<div class="info_wrap">
+											<strong class="title_info">수익률</strong>
+											<!--prettier-ignore-->
+											<p class="txt_info"><em>29.9<small>% (3개월)</small></em></p>
+										</div>
+									</li>
+									<li class="ico_money_pocket">
+										<div class="info_wrap">
+											<strong class="title_info">운용사</strong>
+											<p class="txt_info"><i class="big_txt">삼성운용</i></p>
+										</div>
+									</li>
+									<li class="ico_pig_coin">
+										<div class="info_wrap">
+											<strong class="title_info">펀드규모(운용펀드기준)</strong>
+											<!--prettier-ignore-->
+											<p class="txt_info"><em class="num_txt">120.2<i class="big_txt">억</i></em><small>원</small></p>
+										</div>
+									</li>
+								</ul>
+								<!-- 기타 정보-->
+								<ul class="list_detail_sub">
+									<li>
+										<strong class="title_sub_dtail">투자위험</strong>
+										<p class="ico_lisk risk1">매우높은위험</p>
+									</li>
+									<li>
+										<strong class="title_sub_dtail">설정일</strong>
+										<p>2017.09.18</p>
+									</li>
+								</ul>
+							</article>
+							<!-- 스크롤 탭메뉴 ★★-->
+							<!--[D] 
+탭메뉴 필수 요소
+   1. tab_list_wrap
+   2. data-tb 값 = 탭메뉴 아이템 영역과 같아야 함 ★★★
+탭메뉴 컨텐츠 필수 요소
+   1. tab_item_wrap 클래스의 wrap영역 , data-tb 과 똑같은 값을가진 data-tc
+   2. 자식 요소들은 tab_item_box 클래스 필수-->
+							<!---->
+							<div class="inline_list_wrap offset_full">
+								<ul class="list_basic_items line tab_list_wrap" data-tb="tab_pdt_info_list">
+									<li><a href="javascript:void(0)">성과 및 위험</a></li>
+									<li><a href="javascript:void(0)">자산분석</a></li>
+									<li><a href="javascript:void(0)">기준가조회</a></li>
+									<li><a href="javascript:void(0)">투자비용/매매프로세스</a></li>
+								</ul>
+							</div>
+							<!--스크롤 컨텐츠 영역-->
+							<div class="tab_item_wrap" data-tc="tab_pdt_info_list">
+								<!--성과및 위험-->
+								<div class="tab_item_box">
+									<!--그래프-->
+									<div class="content_wrap">
+										<div class="content_title_area">
+											<h3 class="title_content_name">
+												<span>수익률 추이</span>
+												<button class="info_pop"><span class="blind">상세정보 팝업 열기</span></button>
+											</h3>
+											<div class="title_content_option"><p class="desc_title_data">2019년 07월 23일 기준</p></div>
+										</div>
+										<div class="split_tab_wrap">
+											<ul class="list_split_menu tab_list_wrap" data-tb="tab_grap_content">
+												<li>
+													<button><span class="name_split_item">수익률 추이</span></button>
+													<strong class="blind">연도 선택</strong>
+													<div class="basic_select_box ">
+														<label for="select2">
+															<span class="name_select">3개월</span>
+															<select class="basic_select" name="" id="select2">
+																<option value="3개월">3개월</option>
+																<option value="3개월">3개월</option>
+																<option value="3개월">3개월</option>
+															</select>
+															<i class="ico_arrow" aria-hidden="true"></i>
+														</label>
+													</div>
+												</li>
+												<li>
+													<button><span class="name_split_item">기간별 수익률</span></button>
+												</li>
+											</ul>
+										</div>
+										<!-- 그래프 컨텐츠-->
+										<div class="box_graph tab_item_wrap" data-tc="tab_grap_content">
+											<div class="tab_item_box">
+												<img src="img/@tmp_grap.jpg" />
+												<div class="check_wrap">
+													<p class="small_alarm">그래프를 터치하면 데이터 레이블을 확인하실 수 있습니다.</p>
+													<label class="type_text item_check_wrap undefined" for="graph1">
+														<input class="blind" type="checkbox" name="" id="graph1" />
+														<span class="text_item">코스피</span>
+														<!--[D] 네모난 타입은 square 클래스 추가-->
+														<span class="check_state"><span class="checkmark" aria-hidden="true"></span></span>
+													</label>
+													<label class="type_text item_check_wrap undefined" for="graph2">
+														<input class="blind" type="checkbox" name="" id="graph2" />
+														<span class="text_item">코스닥</span>
+														<!--[D] 네모난 타입은 square 클래스 추가-->
+														<span class="check_state"><span class="checkmark" aria-hidden="true"></span></span>
+													</label>
+													<label class="type_text item_check_wrap undefined" for="graph3">
+														<input class="blind" type="checkbox" name="" id="graph3" />
+														<span class="text_item">S&P 500</span>
+														<!--[D] 네모난 타입은 square 클래스 추가-->
+														<span class="check_state"><span class="checkmark" aria-hidden="true"></span></span>
+													</label>
+												</div>
+											</div>
+											<div class="tab_item_box">
+												<!--[D] 모든 table 은 table_wrap 클래스 추가-->
+												<div class="table_wrap">
+													<table class="common_table">
+														<colgroup><col width="20%" /></colgroup>
+														<thead>
+															<tr>
+																<th scope="col">구분</th>
+																<th scope="col">1년</th>
+																<th scope="col">3개월</th>
+																<th scope="col">6개월</th>
+																<th scope="col">1년</th>
+																<th scope="col">연초후</th>
+															</tr>
+														</thead>
+														<tbody>
+															<tr>
+																<td>펀드(%)</td>
+																<td class="up">13.9</td>
+																<td class="up">13.9</td>
+																<td class="up">13.9</td>
+																<td class="up">13.9</td>
+																<td class="up">13.9</td>
+															</tr>
+															<tr>
+																<td>벤치마크(%)</td>
+																<td class="down">-4.1</td>
+																<td class="down">-4.1</td>
+																<td class="down">-4.1</td>
+																<td class="down">-4.1</td>
+																<td class="up">4.1</td>
+															</tr>
+															<tr>
+																<td>
+																	GAP(%)
+																	<br />
+																	벤치마크
+																	<br />
+																	대비
+																</td>
+																<td class="up">13.9</td>
+																<td class="up">13.9</td>
+																<td class="up">0.8</td>
+																<td class="up">13.9</td>
+																<td class="up">13.9</td>
+															</tr>
+														</tbody>
+													</table>
+												</div>
+											</div>
+										</div>
+									</div>
+									<!-- 연도별 성과-->
+									<div class="content_wrap">
+										<div class="content_title_area">
+											<h3 class="title_content_name"><span>연도별 성과</span></h3>
+											<div class="title_content_option">
+												<div class="basic_select_box ">
+													<label for="select3">
+														<span class="name_select">2019년</span>
+														<select class="basic_select" name="" id="select3">
+															<option value="2018년">2018년</option>
+															<option value="2017년">2017년</option>
+															<option value="2016년">2016년</option>
+														</select>
+														<i class="ico_arrow" aria-hidden="true"></i>
+													</label>
+												</div>
+											</div>
+										</div>
+										<!--[D] 모든 table 은 table_wrap 클래스 추가-->
+										<div class="table_wrap">
+											<table class="common_table">
+												<colgroup><col width="50%" /></colgroup>
+												<thead>
+													<tr>
+														<th scope="col">구분</th>
+														<th scope="col">수익률(%)</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td>펀드</td>
+														<td class="up">10.0</td>
+													</tr>
+													<tr>
+														<td>벤치마크대비</td>
+														<td class="up">4.1</td>
+													</tr>
+													<tr>
+														<td>유형평균</td>
+														<td class="up">9.6</td>
+													</tr>
+													<tr>
+														<td>%순위</td>
+														<td class="up">8</td>
+													</tr>
+													<tr>
+														<td>절대순위 / 평가대상 펀드 수</td>
+														<td>2 / 15</td>
+													</tr>
+													<tr>
+														<td>KOSPI</td>
+														<td class="down">-4.6</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+									<!--위험분석-->
+									<div class="content_wrap">
+										<div class="content_title_area">
+											<h3 class="title_content_name">
+												<span>위험분석</span>
+												<button class="info_pop"><span class="blind">상세정보 팝업 열기</span></button>
+											</h3>
+											<div class="title_content_option">
+												<div class="basic_select_box ">
+													<label for="select3">
+														<span class="name_select">1년</span>
+														<select class="basic_select" name="" id="select3">
+															<option value="3개월">3개월</option>
+															<option value="6개월">6개월</option>
+															<option value="1년">1년</option>
+															<option value="3년">3년</option>
+															<option value="5년">5년</option>
+														</select>
+														<i class="ico_arrow" aria-hidden="true"></i>
+													</label>
+												</div>
+											</div>
+										</div>
+										<!--[D] 모든 table 은 table_wrap 클래스 추가-->
+										<div class="table_wrap">
+											<table class="common_table">
+												<colgroup>
+													<col width="25%" />
+													<col width="25%" />
+													<col width="25%" />
+													<col width="25%" />
+												</colgroup>
+												<thead>
+													<tr>
+														<th scope="col">구분</th>
+														<th scope="col">
+															변동성
+															<span>(표준편차, %)</span>
+														</th>
+														<th scope="col">샤프지수</th>
+														<th scope="col">정보비율</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td>지표</td>
+														<td>5.51</td>
+														<td>1.16</td>
+														<td>0.88</td>
+													</tr>
+													<tr>
+														<td>%순위</td>
+														<td class="down">71</td>
+														<td class="up">36</td>
+														<td class="up">36</td>
+													</tr>
+													<tr>
+														<td>
+															절대순위/
+															<br />
+															평가대상
+															<br />
+															펀드 수
+														</td>
+														<td>
+															11
+															<br />
+															/ 15
+														</td>
+														<td>
+															6
+															<br />
+															/ 15
+														</td>
+														<td>
+															6
+															<br />
+															/ 15
+														</td>
+													</tr>
+													<tr>
+														<td>유형평균</td>
+														<td>5.25</td>
+														<td>1.15</td>
+														<td class="down">-4.6</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</div>
+								<!--자산분석-->
+								<div class="tab_item_box">
+									<div class="content_wrap">
+										<div class="content_title_area">
+											<h3 class="title_content_name"><span>자산비중 및 구성</span></h3>
+										</div>
+										<div class="box_graph">
+											<div><img src="img/@tmp_grap_round.jpg" alt="" /></div>
+											<ul class="list_color_info">
+												<li>
+													<i class="ico_square" aria-hidden="true" style="background-color:#c93d60"></i>
+													<strong class="name_info">해외주식</strong>
+													<span class="text_info">7억원</span>
+												</li>
+												<li>
+													<i class="ico_square" aria-hidden="true"></i>
+													<strong class="name_info">유동성</strong>
+													<span class="text_info">1억원</span>
+												</li>
+											</ul>
+											<!--[D] 모든 table 은 table_wrap 클래스 추가-->
+											<div class="table_wrap">
+												<table class="common_table">
+													<colgroup><col colspan="2" width="25%" /></colgroup>
+													<thead>
+														<tr>
+															<th scope="col" colspan="2">구분</th>
+															<th scope="col">평가액(억원)</th>
+															<th scope="col">펀드 내 비중(%)</th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr>
+															<td rowspan="2">주식</td>
+															<td>국내주식</td>
+															<td>-</td>
+															<td>-</td>
+														</tr>
+														<tr>
+															<td>해외주식</td>
+															<td>7</td>
+															<td>93.9</td>
+														</tr>
+														<tr>
+															<td rowspan="2">채권</td>
+															<td>국내채권</td>
+															<td>-</td>
+															<td>-</td>
+														</tr>
+														<tr>
+															<td>해외채권</td>
+															<td>-</td>
+															<td>-</td>
+														</tr>
+														<tr>
+															<td colspan="2">펀드</td>
+															<td>-</td>
+															<td>-</td>
+														</tr>
+														<tr>
+															<td colspan="2">유동성</td>
+															<td>1</td>
+															<td>9.0</td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+										</div>
+									</div>
+									<div class="content_wrap">
+										<div class="content_title_area">
+											<h3 class="title_content_name"><span>기타자산 TOP5</span></h3>
+										</div>
+										<!--[D] 모든 table 은 table_wrap 클래스 추가-->
+										<div class="table_wrap">
+											<table class="common_table">
+												<colgroup><col width="60%" /></colgroup>
+												<thead>
+													<tr>
+														<th scope="col">자산명</th>
+														<th scope="col">펀드 내 비중(%)</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td>예금잔고</td>
+														<td>6.7</td>
+													</tr>
+													<tr>
+														<td>USD CALL</td>
+														<td>1.3</td>
+													</tr>
+													<tr>
+														<td>AUD CALL</td>
+														<td>1.0</td>
+													</tr>
+													<tr>
+														<td>HKD CALL</td>
+														<td>0.0</td>
+													</tr>
+													<tr>
+														<td>ZAR CALL</td>
+														<td>0.0</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</div>
+								<!-- 기준가조회-->
+								<div class="tab_item_box">
+									<div class="content_wrap">
+										<div class="content_title_area">
+											<h3 class="title_content_name"><span>기준가 조회 결과</span></h3>
+											<div class="title_content_option">
+												<div class="basic_select_box ">
+													<label for="select4">
+														<span class="name_select">1개월</span>
+														<select class="basic_select" name="" id="select4">
+															<option value="1개월">1개월</option>
+															<option value="1개월">1개월</option>
+															<option value="1개월">1개월</option>
+														</select>
+														<i class="ico_arrow" aria-hidden="true"></i>
+													</label>
+												</div>
+											</div>
+										</div>
+										<!--[D] 모든 table 은 table_wrap 클래스 추가-->
+										<div class="table_wrap">
+											<table class="common_table">
+												<thead>
+													<tr>
+														<th scope="col">기준일</th>
+														<th scope="col">수정기준가</th>
+														<th scope="col">기준가</th>
+														<th scope="col">과표기준가</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td>2019-08-21</td>
+														<td>995.39</td>
+														<td>995.39</td>
+														<td>0.88</td>
+													</tr>
+													<tr>
+														<td>2019-08-21</td>
+														<td>995.39</td>
+														<td>995.39</td>
+														<td>0.88</td>
+													</tr>
+													<tr>
+														<td>2019-08-21</td>
+														<td>995.39</td>
+														<td>995.39</td>
+														<td>0.88</td>
+													</tr>
+													<tr>
+														<td>2019-08-21</td>
+														<td>995.39</td>
+														<td>995.39</td>
+														<td>0.88</td>
+													</tr>
+													<tr>
+														<td>2019-08-21</td>
+														<td>995.39</td>
+														<td>995.39</td>
+														<td>0.88</td>
+													</tr>
+													<tr>
+														<td>2019-08-21</td>
+														<td>995.39</td>
+														<td>995.39</td>
+														<td>0.88</td>
+													</tr>
+													<tr>
+														<td>2019-08-21</td>
+														<td>995.39</td>
+														<td>995.39</td>
+														<td>0.88</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</div>
+								<!-- 투자비용/매매프로세스-->
+								<div class="tab_item_box">
+									<!-- 펀드 투자비용-->
+									<div class="content_wrap">
+										<div class="content_title_area">
+											<h3 class="title_content_name">
+												<span>펀드투자비용</span>
+												<button class="info_pop"><span class="blind">상세정보 팝업 열기</span></button>
+											</h3>
+										</div>
+										<article class="price_lnfo_wrap">
+											<h2 class="blind">투자비용안내</h2>
+											<ul class="list_price_info">
+												<li class="item_wrap_price">
+													<h3 class="title_price_info">매입할 때</h3>
+													<strong class="name_info">선취판매수수료</strong>
+													<p class="desc_info">수수료 없음</p>
+												</li>
+												<li class="item_wrap_price">
+													<h3 class="title_price_info">투자기간 동안</h3>
+													<!--prettier-ignore-->
+													<strong class="name_info">총 보수<br>연 1.065%</strong>
+													<ul class="list_desc_info">
+														<li>
+															<strong>운용보수</strong>
+															<span>0.500%</span>
+														</li>
+														<li>
+															<strong>판매보수</strong>
+															<span>0.500%</span>
+														</li>
+														<li>
+															<strong>수탁보수</strong>
+															<span>0.040%</span>
+														</li>
+														<li>
+															<strong>사무보수</strong>
+															<span>0.025%</span>
+														</li>
+													</ul>
+												</li>
+												<li class="item_wrap_price">
+													<h3 class="title_price_info">환매할 떄</h3>
+													<strong class="name_info">후취판매수수료</strong>
+													<p class="desc_info">수수료 없음</p>
+													<strong class="name_info">환매수수료</strong>
+													<p class="desc_info">수수료 없음</p>
+												</li>
+											</ul>
+										</article>
+									</div>
+									<!-- 매입 프로세스-->
+									<div class="content_wrap">
+										<div class="content_title_area">
+											<h3 class="title_content_name"><span>매입 프로세스</span></h3>
+										</div>
+										<article class="process_content">
+											<ul class="list_process">
+												<li class="item_box">
+													<div class="box_process_wrap mint">
+														<p class="desc_process">
+															매입
+															<br />
+															17시 이전
+														</p>
+													</div>
+													<strong class="title_process">제1영업일</strong>
+												</li>
+												<li class="item_box">
+													<div class="box_process_wrap">
+														<p class="desc_process">
+															기준일
+															<br />
+															적용가
+														</p>
+													</div>
+													<strong class="title_process">제2영업일</strong>
+												</li>
+												<li class="item_box">
+													<div class="box_process_wrap"><p class="desc_process">매입일</p></div>
+													<strong class="title_process">제3영업일</strong>
+												</li>
+											</ul>
+											<ul class="list_process">
+												<li class="item_box">
+													<div class="box_process_wrap mint">
+														<p class="desc_process">
+															매입
+															<br />
+															17시 경과후
+														</p>
+													</div>
+													<strong class="title_process">제1영업일</strong>
+												</li>
+												<li class="item_box">
+													<div class="box_process_wrap">
+														<p class="desc_process">
+															기준일
+															<br />
+															적용가
+														</p>
+													</div>
+													<strong class="title_process">제4영업일</strong>
+												</li>
+												<li class="item_box">
+													<div class="box_process_wrap"><p class="desc_process">매입일</p></div>
+													<strong class="title_process">제4영업일</strong>
+												</li>
+											</ul>
+										</article>
+									</div>
+									<!-- 매입 프로세스-->
+									<div class="content_wrap">
+										<div class="content_title_area">
+											<h3 class="title_content_name"><span>환매 프로세스</span></h3>
+										</div>
+										<article class="process_content">
+											<ul class="list_process">
+												<li class="item_box">
+													<div class="box_process_wrap blue">
+														<p class="desc_process">
+															환매
+															<br />
+															17시 이전
+														</p>
+													</div>
+													<strong class="title_process">제1영업일</strong>
+												</li>
+												<li class="item_box">
+													<div class="box_process_wrap">
+														<p class="desc_process">
+															기준일
+															<br />
+															적용가
+														</p>
+													</div>
+													<strong class="title_process">제4영업일</strong>
+												</li>
+												<li class="item_box">
+													<div class="box_process_wrap"><p class="desc_process">환매일</p></div>
+													<strong class="title_process">제8영업일</strong>
+												</li>
+											</ul>
+											<ul class="list_process">
+												<li class="item_box">
+													<div class="box_process_wrap blue">
+														<p class="desc_process">
+															환매
+															<br />
+															17시 경과후
+														</p>
+													</div>
+													<strong class="title_process">제1영업일</strong>
+												</li>
+												<li class="item_box">
+													<div class="box_process_wrap">
+														<p class="desc_process">
+															기준일
+															<br />
+															적용가
+														</p>
+													</div>
+													<strong class="title_process">제5영업일</strong>
+												</li>
+												<li class="item_box">
+													<div class="box_process_wrap"><p class="desc_process">환매일</p></div>
+													<strong class="title_process">제9영업일</strong>
+												</li>
+											</ul>
+										</article>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- 추가정보 영역-->
+						<article class="pdt_info_sub offset_full">
+							<h2 class="blind">추가정보</h2>
+							<!-- 동일유형 펀드-->
+							<article class="pat_sub_item">
+								<h3 class="title_sub_content"><span class="title_sub">동일유형 펀드</span></h3>
+								<div class="inline_list_wrap offset_full">
+									<div class="box_fund">
+										<article class="item_info_wrap">
+											<h1 class="blind">펀드 정보</h1>
+											<section class="item_tag_wrap"></section>
+											<!-- 옵션영역-->
+											<section class="option_wrap">
+												<h1 class="blind">상품특징</h1>
+												<!-- 라벨-->
+												<article class="label_wrap">
+													<h2 class="blind">특징 목록</h2>
+													<ul class="list_inline_label xs">
+														<li><span class="btn_basic square line_blue xs">혼합형</span></li>
+														<li class="span"><button class="btn_basic square xs">글로벌 공격적자산배분</button></li>
+													</ul>
+												</article>
+											</section>
+											<!-- 펀드명-->
+											<section class="item_name_wrap">
+												<h1 class="blind">상품명</h1>
+												<a class="name_fund line_cut2" href="#;"><span>미래에셋퇴직플랜BRICs 업종대표40 증권자투자신탁1(채권혼합) 종류 업종대표40 증권자투자신탁1(채권혼합) 종류</span></a>
+											</section>
+											<!-- 수익률 및 차트-->
+											<section class="item_data_wrap">
+												<!-- 수익률-->
+												<section class="data_info">
+													<article class="fund_data">
+														<strong class="blind">수익률</strong>
+														<p class="text_profits">
+															<em>999.9</em>
+															<span>%</span>
+														</p>
+														<strong class="blind">기준 데이터</strong>
+														<p class="text_profits_info">3개월 수익률</p>
+													</article>
+												</section>
+												<!-- 차트-->
+												<section class="chart_info"><h1 class="blind">차트영역</h1></section>
+											</section>
+										</article>
+										<div class="fund_bottom_wrap"></div>
+									</div>
+									<div class="box_fund">
+										<article class="item_info_wrap">
+											<h1 class="blind">펀드 정보</h1>
+											<section class="item_tag_wrap"></section>
+											<!-- 옵션영역-->
+											<section class="option_wrap">
+												<h1 class="blind">상품특징</h1>
+												<!-- 라벨-->
+												<article class="label_wrap">
+													<h2 class="blind">특징 목록</h2>
+													<ul class="list_inline_label xs">
+														<li><span class="btn_basic square line_blue xs">혼합형</span></li>
+														<li class="span"><button class="btn_basic square xs">글로벌 공격적자산배분</button></li>
+													</ul>
+												</article>
+											</section>
+											<!-- 펀드명-->
+											<section class="item_name_wrap">
+												<h1 class="blind">상품명</h1>
+												<a class="name_fund line_cut2" href="#;"><span>미래에셋퇴직플랜BRICs 업종대표40 증권자투자신탁1(채권혼합) 종류 업종대표40 증권자투자신탁1(채권혼합) 종류</span></a>
+											</section>
+											<!-- 수익률 및 차트-->
+											<section class="item_data_wrap">
+												<!-- 수익률-->
+												<section class="data_info">
+													<article class="fund_data">
+														<strong class="blind">수익률</strong>
+														<p class="text_profits">
+															<em>999.9</em>
+															<span>%</span>
+														</p>
+														<strong class="blind">기준 데이터</strong>
+														<p class="text_profits_info">3개월 수익률</p>
+													</article>
+												</section>
+												<!-- 차트-->
+												<section class="chart_info"><h1 class="blind">차트영역</h1></section>
+											</section>
+										</article>
+										<div class="fund_bottom_wrap"></div>
+									</div>
+									<div class="box_fund">
+										<article class="item_info_wrap">
+											<h1 class="blind">펀드 정보</h1>
+											<section class="item_tag_wrap"></section>
+											<!-- 옵션영역-->
+											<section class="option_wrap">
+												<h1 class="blind">상품특징</h1>
+												<!-- 라벨-->
+												<article class="label_wrap">
+													<h2 class="blind">특징 목록</h2>
+													<ul class="list_inline_label xs">
+														<li><span class="btn_basic square line_blue xs">혼합형</span></li>
+														<li class="span"><button class="btn_basic square xs">글로벌 공격적자산배분</button></li>
+													</ul>
+												</article>
+											</section>
+											<!-- 펀드명-->
+											<section class="item_name_wrap">
+												<h1 class="blind">상품명</h1>
+												<a class="name_fund line_cut2" href="#;"><span>미래에셋퇴직플랜BRICs 업종대표40 증권자투자신탁1(채권혼합) 종류 업종대표40 증권자투자신탁1(채권혼합) 종류</span></a>
+											</section>
+											<!-- 수익률 및 차트-->
+											<section class="item_data_wrap">
+												<!-- 수익률-->
+												<section class="data_info">
+													<article class="fund_data">
+														<strong class="blind">수익률</strong>
+														<p class="text_profits">
+															<em>999.9</em>
+															<span>%</span>
+														</p>
+														<strong class="blind">기준 데이터</strong>
+														<p class="text_profits_info">3개월 수익률</p>
+													</article>
+												</section>
+												<!-- 차트-->
+												<section class="chart_info"><h1 class="blind">차트영역</h1></section>
+											</section>
+										</article>
+										<div class="fund_bottom_wrap"></div>
+									</div>
+									<div class="box_fund">
+										<article class="item_info_wrap">
+											<h1 class="blind">펀드 정보</h1>
+											<section class="item_tag_wrap"></section>
+											<!-- 옵션영역-->
+											<section class="option_wrap">
+												<h1 class="blind">상품특징</h1>
+												<!-- 라벨-->
+												<article class="label_wrap">
+													<h2 class="blind">특징 목록</h2>
+													<ul class="list_inline_label xs">
+														<li><span class="btn_basic square line_blue xs">혼합형</span></li>
+														<li class="span"><button class="btn_basic square xs">글로벌 공격적자산배분</button></li>
+													</ul>
+												</article>
+											</section>
+											<!-- 펀드명-->
+											<section class="item_name_wrap">
+												<h1 class="blind">상품명</h1>
+												<a class="name_fund line_cut2" href="#;"><span>미래에셋퇴직플랜BRICs 업종대표40 증권자투자신탁1(채권혼합) 종류 업종대표40 증권자투자신탁1(채권혼합) 종류</span></a>
+											</section>
+											<!-- 수익률 및 차트-->
+											<section class="item_data_wrap">
+												<!-- 수익률-->
+												<section class="data_info">
+													<article class="fund_data">
+														<strong class="blind">수익률</strong>
+														<p class="text_profits">
+															<em>999.9</em>
+															<span>%</span>
+														</p>
+														<strong class="blind">기준 데이터</strong>
+														<p class="text_profits_info">3개월 수익률</p>
+													</article>
+												</section>
+												<!-- 차트-->
+												<section class="chart_info"><h1 class="blind">차트영역</h1></section>
+											</section>
+										</article>
+										<div class="fund_bottom_wrap"></div>
+									</div>
+								</div>
+							</article>
+							<!-- 인사이트 리포트-->
+							<article class="pat_sub_item">
+								<h3 class="title_sub_content"><span class="title_sub">인사이트 리포트</span></h3>
+								<div class="inline_list_wrap offset_full">
+									<ul class="inline_box_content">
+										<li>
+											<a href="#;">
+												<strong class="label_content">
+													<span class="blind">주제</span>
+													주식과 펀드
+												</strong>
+												<p class="text_content">
+													연말정산을 위한 소비전략①
+													<br />
+													올바른 신용카드 생활(上)
+												</p>
+											</a>
+										</li>
+										<li>
+											<a href="#;">
+												<strong class="label_content">
+													<span class="blind">주제</span>
+													1분 경제읽기
+												</strong>
+												<p class="text_content">
+													연말정산을 위한 소비전략①
+													<br />
+													올바른 신용카드 생활(上)
+												</p>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</article>
+							<!-- 다운로드-->
+							<article class="pdt_down_wrap pat_sub_item">
+								<h2 class="blind">관련자료 다운받기</h2>
+								<ul class="list_drpdown_item">
+									<li>
+										<botton class="btn_down_item">
+											보고서 다운로드
+											<ico class="ico_arrow" aria-hidden="true"></ico>
+										</botton>
+										<ul class="list_down_depth">
+											<li><a class="ico_down" href="#;">요약보고서</a></li>
+											<li><a class="ico_down" href="#;">상세보고서</a></li>
+										</ul>
+									</li>
+									<li>
+										<botton class="btn_down_item">
+											공시문서
+											<ico class="ico_arrow" aria-hidden="true"></ico>
+										</botton>
+										<ul class="list_down_depth">
+											<li><a href="#;">집합투자규약</a></li>
+											<li><a href="#;">자산운용보고서(3개월)</a></li>
+										</ul>
+									</li>
+								</ul>
+							</article>
+						</article>
+						<!--목록-->
+						<div class="box_list_btn"><a class="btn_go_list" href="#;">목록</a></div>
+						<!--알려드립니다.-->
+						<article class="pdt_notice">
+							<h2 class="title_pdt_noticle">알려드립니다!</h2>
+							<ul class="list_type_dot">
+								<!-- [D] 하위 메뉴가 있는 내용의 경우 toggle_notice 클래스 추가-->
+								<li class="toggle_notice">
+									<span>
+										클래스별 투자비용 안내
+										<button class="btn_notice_info">
+											<i class="ico_arrow" aria-hidden="true"></i>
+											<span class="blind">자세한 내용 보기</span>
+										</button>
+									</span>
+									<div class="notice_info_wrap">
+										<!--[D] 모든 table 은 table_wrap 클래스 추가-->
+										<div class="table_wrap">
+											<table class="common_table">
+												<colgroup>
+													<col width="23%" />
+													<col width="18%" />
+													<col width="17%" />
+													<col width="14%" />
+													<col width="14%" />
+													<col width="14%" />
+												</colgroup>
+												<thead>
+													<tr>
+														<th scope="col">
+															펀드 및
+															<br />
+															클래스
+														</th>
+														<th scope="col">매입시</th>
+														<th scope="col">투자기간</th>
+														<th scope="col" colspan="2">완매시</th>
+														<th scope="col">비고</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td>삼성한국형 TDF2t040 증권투자신탁 H[주식혼합-재간접형]</td>
+														<td>
+															선취판매
+															<br />
+															수수료
+														</td>
+														<td>총보수</td>
+														<td>
+															후취완매
+															<br />
+															수수료
+														</td>
+														<td>
+															완매
+															<br />
+															수수료
+														</td>
+														<td></td>
+													</tr>
+													<tr>
+														<td>Class A</td>
+														<td>1.000%</td>
+														<td>연 1.010%</td>
+														<td>-</td>
+														<td>-</td>
+														<td></td>
+													</tr>
+													<tr>
+														<td>Class Ae</td>
+														<td>0.500%</td>
+														<td>연 0.690%</td>
+														<td>-</td>
+														<td>-</td>
+														<td></td>
+													</tr>
+													<tr>
+														<td>Class C</td>
+														<td>-</td>
+														<td>연 1.350%</td>
+														<td>-</td>
+														<td>-</td>
+														<td></td>
+													</tr>
+													<tr>
+														<td>Class C-P</td>
+														<td>-</td>
+														<td>연 1.290%</td>
+														<td>-</td>
+														<td>-</td>
+														<td></td>
+													</tr>
+													<tr>
+														<td>Class C-Pe</td>
+														<td>-</td>
+														<td>연 0.830%</td>
+														<td>-</td>
+														<td>-</td>
+														<td></td>
+													</tr>
+													<tr>
+														<td>Class Ce</td>
+														<td>-</td>
+														<td>연 0.860%</td>
+														<td>-</td>
+														<td>-</td>
+														<td></td>
+													</tr>
+													<tr>
+														<td>Class Cf</td>
+														<td>-</td>
+														<td>연 0.395%</td>
+														<td>-</td>
+														<td>-</td>
+														<td></td>
+													</tr>
+													<tr>
+														<td>Class Cp</td>
+														<td>-</td>
+														<td>연 1.090%</td>
+														<td>-</td>
+														<td>-</td>
+														<td></td>
+													</tr>
+													<tr>
+														<td>
+															Class Cpe
+															<br />
+															(퇴직연금)
+														</td>
+														<td>-</td>
+														<td>연 0.730%</td>
+														<td>-</td>
+														<td>-</td>
+														<td></td>
+													</tr>
+													<tr>
+														<td>Class Cw</td>
+														<td>-</td>
+														<td>연 0.380%</td>
+														<td>-</td>
+														<td>-</td>
+														<td></td>
+													</tr>
+													<tr>
+														<td>Class S</td>
+														<td>-</td>
+														<td>연 0.630%</td>
+														<td>
+															환매액
+															<br />
+															*0.150%
+															<br />
+															(3년미만)
+														</td>
+														<td>일 미만의%</td>
+														<td></td>
+													</tr>
+													<tr>
+														<td>Class S-P</td>
+														<td>-</td>
+														<td>연 0.580%</td>
+														<td>-</td>
+														<td>-</td>
+														<td></td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</li>
+								<li><span>펀드의 수익률은 보수 및 세금공제 전의 수익률이므로 투자자(수익자)가 환매(출금)하는 경우 실제 실현수익률과는 보수 및 세금만큼의 차이가 발생할 수 있습니다. 또한 투자자가 환매 수수료 부과기간 이내에 환매하는 경우에는 환매수수료만큼의 차이가 추가로 발생할 수 있습니다.</span></li>
+								<li><span>집합투자상품은 예금자보호법에 따라 예금보험공사가 보호하지 않으며, 운용결과에 따라 손실이 발생할 수 있고 그 손실은 투자자에게 귀속됩니다.</span></li>
+								<li><span>가입하시기 전에 투자대상, 환매방법 및 보수 등에 관하여 (간이)투자설명서를 반드시 읽어보시기 바랍니다.</span></li>
+								<li><span>과거의 운용실적이 미래의 수익을 보장하는 것은 아닙니다.</span></li>
+								<li><span>외화자산은 환율변동에 따라 투자자산의 가치가 변동되거나 손실을 볼 수 있습니다.</span></li>
+							</ul>
+						</article>
+						<!--[D] sample_layer_OOO은 레이어 탭메뉴용 , 리얼 반영시 삭제-->
+						<ul class="sample_layer_btn">
+							<li class="on">주식운용 스타일</li>
+							<li>채권운용 스타일</li>
+							<li>펀드클래스</li>
+							<li>수익률 추이(3년)</li>
+							<li>위험분석</li>
+							<li>펀드 투자비용</li>
+						</ul>
+						<div class="smaple_layer_group">
+							<div class="sample_layer_box">
+								<article class="fixed_layer_area on">
+									<div class="dimmed"></div>
+									<article class="fixed_layer_wrap">
+										<header class="layer_header">
+											<div class="balloon_box"><strobg class="main_txt">TIP</strobg></div>
+											<div class="box_title_area"><h1 class="title_layer">주식운용 스타일</h1></div>
+											<div class="box_right_area">
+												<button class="btn_close"><span class="blind">닫기</span></button>
+											</div>
+										</header>
+										<section class="layer_content">
+											<ul class="list_type_dot">
+												<li><span>스타일 박스 안의 숫자는 편입비율(%)을 의미합니다</span></li>
+												<li><span>주식스타일은 펀드에 편입된 개별 종목의 규모(대형주, 중형주, 소형주)와 특성(성장형, 가치형 혼합형)으로 구분되며, 주식스타일명은 실제 주식편입비중 이외에 펀드평가사의 평가방법론에 따라 전체 편입자산의 대표값을 감안하여 분류합니다.</span></li>
+											</ul>
+										</section>
+									</article>
+								</article>
+							</div>
+							<div class="sample_layer_box">
+								<article class="fixed_layer_area on">
+									<div class="dimmed"></div>
+									<article class="fixed_layer_wrap">
+										<header class="layer_header">
+											<div class="balloon_box"><strobg class="main_txt">TIP</strobg></div>
+											<div class="box_title_area"><h1 class="title_layer">채권운용 스타일</h1></div>
+											<div class="box_right_area">
+												<button class="btn_close"><span class="blind">닫기</span></button>
+											</div>
+										</header>
+										<section class="layer_content">
+											<ul class="list_type_dot">
+												<li><span>스타일 박스 안의 숫자는 편입비율(%)을 의미합니다</span></li>
+												<li><span>채권 운용스타일은 채권투자의 수익과 위험에 가장 큰 영향을 주는 요소인 신용도와 이자율변화로 스타일을 구분합니다. 신용도는 예상부도율을 기준으로 상등급, 중등급, 하등급으로 구분하고, 이자율 변화는 이자율 변화에 따른 민감도 값인 듀레이션을 기준으로 2년 미만은 단기, 2-4년은 중기, 4년 이상은 장기로 구분합니다.</span></li>
+											</ul>
+										</section>
+									</article>
+								</article>
+							</div>
+							<div class="sample_layer_box">
+								<article class="fixed_layer_area on">
+									<div class="dimmed"></div>
+									<article class="fixed_layer_wrap">
+										<header class="layer_header">
+											<div class="balloon_box"><strobg class="main_txt">TIP</strobg></div>
+											<div class="box_title_area"><h1 class="title_layer">펀드클래스 구분</h1></div>
+											<div class="box_right_area">
+												<button class="btn_close"><span class="blind">닫기</span></button>
+											</div>
+										</header>
+										<section class="layer_content">
+											<div class="info_fund_layer">
+												<p class="point_blue">판매수수료와 보수체계에 따라 구분되며, 투자하시는 목적이나 기간에 맞추어 선택하시는 것이 좋습니다.</p>
+												<ul class="list_type_dot">
+													<li>
+														<strong>A</strong>
+														<span>: 펀드가입 시 판매수수료 부과, 비교적 낮은 연간 운용 보수</span>
+													</li>
+													<li>
+														<strong>Ae</strong>
+														<span>: 온라인 전용, 수수료 및 보수가 A보다 저렴</span>
+													</li>
+													<li>
+														<strong>B</strong>
+														<span>: 펀드 환매 시 판매수수료 부과, 비교적 낮은 연간 운용 보수</span>
+													</li>
+													<li>
+														<strong>C</strong>
+														<span>: 판매수수료 없음, 비교적 높은 연간 운용 보수</span>
+													</li>
+													<li>
+														<strong>Ce</strong>
+														<span>: 온라인 전용, 보수가 C보다 저렴</span>
+													</li>
+													<li>
+														<strong>Cp</strong>
+														<span>: 퇴직연금</span>
+													</li>
+													<li>
+														<strong>Cpe</strong>
+														<span>: 온라인 전용, 퇴직연금</span>
+													</li>
+													<li>
+														<strong>C-P</strong>
+														<span>: 개인연금</span>
+													</li>
+													<li>
+														<strong>C-Pe</strong>
+														<span>: 온라인 전용, 개인연금</span>
+													</li>
+													<li>
+														<strong>S</strong>
+														<span>: 펀드슈퍼마켓 전용</span>
+													</li>
+													<li>
+														<strong>S-P</strong>
+														<span>: 펀드슈퍼마켓 전용, 연금</span>
+													</li>
+												</ul>
+											</div>
+										</section>
+									</article>
+								</article>
+							</div>
+							<div class="sample_layer_box">
+								<article class="fixed_layer_area on">
+									<div class="dimmed"></div>
+									<article class="fixed_layer_wrap">
+										<header class="layer_header">
+											<div class="balloon_box"><strobg class="main_txt">TIP</strobg></div>
+											<div class="box_title_area"><h1 class="title_layer">수익률 추이(3년)</h1></div>
+											<div class="box_right_area">
+												<button class="btn_close"><span class="blind">닫기</span></button>
+											</div>
+										</header>
+										<section class="layer_content">
+											<div class="info_fund_layer">
+												<dl class="list_title_info type_dot">
+													<dt class="title">벤치마크(비교지수)</dt>
+													<dd class="txt_desc">벤치마크(비교지수)는 펀드평가사(제로인)가 부여한 BM지수로 투자설명서의 BM(비교지수)와 다를 수 있습니다.</dd>
+													<dt class="title">펀드규모</dt>
+													<dd class="txt_desc">종류형 펀드(멀티클래스 펀드)의 경우에는 현재 조회중인 클래스펀드의 상위펀드 설정액을 표시하였습니다.</dd>
+													<dt class="title">유형평균</dt>
+													<dd class="txt_desc">펀드평가사(제로인)에서 제공하는 펀드의 소유형을 기준으로 계산합니다.</dd>
+													<dt class="title">%순위</dt>
+													<dd class="txt_desc">%순위는 펀드평가사(제로인)의 소유형 기준으로 제공됩니다.</dd>
+													<dd class="txt_desc">%순위는 펀드의 성과에 대해 동일 유형내의 상대적 순위를 한 눈에 알 수 있는 백분율 순위 지표입니다.</dd>
+													<dd class="txt_desc">예를 들어 %순위가 ‘5’이면 동일 유형내에 5%이내에 드는 순위를 의미합니다.</dd>
+													<dd class="txt_desc">그러므로 같은 등위의 펀드가 여러 개일 수 있습니다.</dd>
+												</dl>
+											</div>
+										</section>
+									</article>
+								</article>
+							</div>
+							<div class="sample_layer_box">
+								<article class="fixed_layer_area on">
+									<div class="dimmed"></div>
+									<article class="fixed_layer_wrap">
+										<header class="layer_header">
+											<div class="balloon_box"><strobg class="main_txt">TIP</strobg></div>
+											<div class="box_title_area"><h1 class="title_layer">위험분석</h1></div>
+											<div class="box_right_area">
+												<button class="btn_close"><span class="blind">닫기</span></button>
+											</div>
+										</header>
+										<section class="layer_content">
+											<div class="info_fund_layer">
+												<dl class="list_title_info">
+													<dt class="title">변동성(표준편차,%)</dt>
+													<dd class="txt_desc">펀드의 수익률이 평균에서 이탈하는 정도를 측정합니다. 변동성 지수가 작을수록 변동성이 작은 것을 의미합니다.</dd>
+													<dt class="title">샤프지수</dt>
+													<dd class="txt_desc">1만큼의 위험을 부담하는 대신 얻는 초과수익이 얼마인지를 측정하는 지표입니다. 동일 유형 비교 시 값이 클수록 초과수익이 높습니다.</dd>
+													<dt class="title">정보비율</dt>
+													<dd class="txt_desc">적극적인 투자활동의 결과로 나타나는 초과수익률이 얼마인지 측정하는 지표입니다. 동일 유형끼리 비교했을 때 값이 클수록 좋습니다.</dd>
+												</dl>
+											</div>
+										</section>
+									</article>
+								</article>
+							</div>
+							<div class="sample_layer_box">
+								<article class="fixed_layer_area on">
+									<div class="dimmed"></div>
+									<article class="fixed_layer_wrap">
+										<header class="layer_header">
+											<div class="balloon_box"><strobg class="main_txt">TIP</strobg></div>
+											<div class="box_title_area"><h1 class="title_layer">펀드투자비용</h1></div>
+											<div class="box_right_area">
+												<button class="btn_close"><span class="blind">닫기</span></button>
+											</div>
+										</header>
+										<section class="layer_content">
+											<div class="info_fund_layer"><p>재간접 펀드의 총보수는 이 펀드가 투자하는 모펀드의 합성보수가 발생할 수 있으므로 투자설명서를 확인하시기 바랍니다.</p></div>
+										</section>
+									</article>
+								</article>
+							</div>
+						</div>
+					</div>
+				</article>
+			</main>
+			<!--footer-->
+			<footer id="footer">
+				<h1 class="blind">사이트 정보 영역</h1>
+				<ul class="list_policy">
+					<li><a>이용약관</a></li>
+					<li><a>개인정보 처리방침</a></li>
+				</ul>
+				<dl class="info_site txt_footer">
+					<dt class="blind">주소</dt>
+					<dd>
+						<strong class="blind">우편번호</strong>
+						<span>06620</span>
+						<strong class="blind">나머지 주소</strong>
+						<!--prettier-ignore-->
+						<span>서울특별시 서초구 서초대로74길 11<br>삼성자산운용 (16~18층)</span>
+					</dd>
+				</dl>
+				<!--prettier-ignore-->
+				<p class="txt_footer">콜센터 <a class="txt_footer" tel="080-377-4777">080-377-4777</a>(상담시간:평일 오전 8시~오후5시)</p>
+				<p class="txt_footer copy">&copy; SAMSUNG ASSET MANAGEMENT. ALL RIGHTS RESERVED</p>
+				<button class="btn_top fixed"><span class="blind">최상단 스크롤 이동하기</span></button>
+			</footer>
+			<!-- script-->
+			<script src="js/jquery-2.2.4.min.js"></script>
+			<script src="js/common.js"></script>
+			<script src="js/sub.js"></script>
+			<!-- 레이어 샘플용 소스-->
+			<style>
+				.sample_layer_btn {
+					position: fixed;
+					top: 2vw;
+					left: 0;
+					right: 0;
+					z-index: 9999;
+					display: flex;
+					white-space: nowrap;
+					overflow-x: auto;
+				}
+
+				.sample_layer_btn > li {
+					padding: 2vw 2vw;
+					background-color: #fff;
+				}
+
+				.sample_layer_btn > li.on {
+					background-color: #333;
+					color: #fff;
+				}
+
+				.sample_layer_btn > li + li {
+					border-left: 1px solid #ededed;
+				}
+			</style>
+			<script>
+				$(function() {
+					$(".smaple_layer_group>.sample_layer_box:gt(0)").addClass("hide");
+					$(".sample_layer_btn >li").click(function() {
+						var $this = $(this),
+							$index = $this.index();
+
+						$this
+							.addClass("on")
+							.siblings()
+							.removeClass("on");
+						$(".smaple_layer_group > div")
+							.eq($index)
+							.removeClass("hide")
+							.siblings()
+							.addClass("hide");
+					});
+				});
+			</script>
+			<!-- 레이어 샘플용 소스-->
+		</div>
+	</body>
+</html>

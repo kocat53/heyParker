@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="initial-scale=1.0,user-scalable=no,maximum-scale=1.5,width=device-width" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>삼성펀드솔루션 마크업 목록</title>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:400,500,700&amp;display=swap" />
+		<style type="text/css">
+			* {
+				margin: 0;
+				padding: 0;
+				font-weight: 400;
+				font-family: "Noto Sans KR", sans-serif;
+				letter-spacing: -0.4px;
+			}
+
+			body {
+				font-size: 3vmin;
+				line-height: 1.45;
+			}
+
+			.ci_top_wrap {
+				position: sticky;
+				position: -webkit-sticky;
+				top: 0;
+				z-index: 50;
+				background-color: #fff;
+				border-bottom: 1px solid #000;
+				padding-bottom: 3vmin;
+			}
+
+			i,
+			em {
+				font-style: normal;
+			}
+
+			ul,
+			li,
+			ol {
+				list-style: none;
+			}
+
+			.end {
+				color: #ff6666 !important;
+			}
+
+			.ing {
+				color: #60a1f9 !important;
+			}
+
+			.another {
+				color: #fac628 !important;
+			}
+
+			.more {
+				color: #2ed460 !important;
+			}
+
+			.project_tit {
+				padding: 3vmin 3.2vmin;
+				font-size: 5.5vmin;
+				font-weight: 700;
+				overflow: hidden;
+			}
+
+			.ci_state_area {
+				display: flex;
+				justify-content: space-around;
+				border: 1px solid #000;
+				margin: 0 0 3vmin;
+				padding: 1vmin 3.2vmin;
+				border-right: 0;
+				border-left: 0;
+			}
+
+			.ci_state_area strong,
+			.ci_state_area span {
+				display: inline-block;
+				vertical-align: middle;
+			}
+
+			.ci_state_area span {
+				margin-left: 0.5vmin;
+				font-weight: 700;
+			}
+
+			.ci_list_wrap {
+				padding: 1vmin 3.2vmin;
+			}
+
+			.ci_title_wrap {
+				display: flex;
+				align-items: center;
+			}
+
+			.ci_title_wrap h2 {
+				font-size: 4.3vmin;
+				font-weight: 700;
+			}
+
+			.state_wrap {
+				margin-left: auto;
+			}
+
+			.state_wrap span {
+				font-weight: 500;
+			}
+
+			/*코딩리스트*/
+			.list_coding_work a {
+				position: relative;
+				display: block;
+				color: #444;
+				text-decoration: none;
+			}
+
+			.list_coding_work a:before {
+				content: "- ";
+			}
+
+			.list_coding_work .text_sub {
+				display: inline-block;
+				font-style: normal;
+				font-size: 2.3vmin;
+				vertical-align: middle;
+				margin-left: 0.5vmin;
+			}
+
+			/* 첫번쨰 꺼*/
+			.list_coding_work > li > a {
+				padding: 3.8vmin 0 4.1vmin 3vmin;
+				background-color: #344f6f;
+				font-size: 3.2vmin;
+				font-weight: 700;
+				color: #fff;
+			}
+
+			.list_coding_work > li + li {
+				border-top: 1px solid #53657b;
+			}
+
+			.list_coding_work > li > a:before {
+				content: "";
+			}
+
+			.list_depth1 > li:last-child {
+				border-bottom: 0;
+			}
+
+			/* 1뎁스*/
+			.list_depth1 {
+				display: none;
+				background-color: #f6f6f6;
+			}
+
+			.list_depth1.on {
+				display: block;
+			}
+
+			.list_depth1 > li {
+				border-bottom: 1px solid #aaa;
+			}
+
+			.list_depth1 > li > a {
+				padding: 3.3vmin 0 3.6vmin 5vmin;
+			}
+
+			/* 2뎁스*/
+			.list_depth2 {
+				display: none;
+				background-color: #fff;
+				border-top: 1px solid #aaa;
+			}
+
+			.list_depth2.on {
+				display: block;
+			}
+
+			.list_depth2 > li > a {
+				padding: 3vmin 0 3.3vmin 8vmin;
+			}
+
+			.list_depth2 > li + li {
+				border-top: 1px solid #f2f2f2;
+			}
+
+			.list_coding_work .hasList {
+				position: absolute;
+				top: 50%;
+				transform: translateY(-50%);
+				right: 3vmin;
+				font-size: 6vmin;
+				font-weight: 300;
+			}
+
+			.down_file {
+				text-decoration: none;
+				color: #fff;
+				background-color: #333;
+				padding: 1vmin 3.2vmin 1.1vmin;
+				float: right;
+				font-size: 3vmin;
+				margin-top: 1vmin;
+				border-radius: 5px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="wrap">
+			<div class="ci_top_wrap">
+				<h1 class="project_tit">삼성자산운용_펀드솔루션</h1>
+				<ul class="ci_state_area">
+					<li>
+						<strong>전체</strong>
+						<span class="state_all"></span>
+					</li>
+					<li>
+						<strong>진행중</strong>
+						<span class="state_ing ing"></span>
+					</li>
+					<li>
+						<strong>완료</strong>
+						<span class="state_end end"></span>
+					</li>
+					<li>
+						<strong>진행률</strong>
+						<span class="state_count"></span>
+					</li>
+				</ul>
+				<div class="ci_list_wrap">
+					<!--타이틀-->
+					<div class="ci_title_wrap">
+						<h2>퍼블리싱 목록</h2>
+						<div class="state_wrap">
+							<span class="ing">＊진행중</span>
+							<span>&nbsp;</span>
+							<span class="end">＊완료</span>
+							<span>&nbsp;</span>
+							<span class="another">＊외부링크</span>
+							<span>&nbsp;</span>
+							<span class="more">＊추가작업</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<ul class="list_coding_work">
+				<li><a class="end" href="guide.html">☆★ 공통 가이드 ☆★</a></li>
+				<li><a class="end" href="index.html">메인 (~9/20)</a></li>
+				<li>
+					<a class="end" href="tt.html">펀드정보 (~9/20)</a>
+					<ul class="list_depth1">
+						<li>
+							<a class="end" href="tt.html">전체(공통)</a>
+							<ul class="list_depth2">
+								<li><a class="end" href="fund_list.html">목록</a></li>
+								<li><a class="end" href="fund_no_list.html">검색결과 없을때(공통)</a></li>
+								<li><a class="end" href="fund_list_layer.html">목록 레이어</a></li>
+								<li><a class="end" href="fund_theme_details.html">상세(공통 레이아웃)</a></li>
+								<li><a class="end" href="fund_details_layer.html">상세 레이어(공통)</a></li>
+							</ul>
+						</li>
+						<li>
+							<a class="end" href="tt.html">테마별 펀드</a>
+							<ul class="list_depth2">
+								<li><a class="end" href="fund_list_them.html">목록</a></li>
+								<li><a class="end" href="fund_theme_details.html">상세(공통 레이아웃)</a></li>
+							</ul>
+						</li>
+						<li>
+							<a class="end" href="tt.html">국가별 펀드</a>
+							<ul class="list_depth2">
+								<li><a class="end" href="fund_list_contury_local.html">목록(투자지역별)</a></li>
+								<li><a class="end" href="fund_list_contury_global.html">목록(글로벌 제휴사)</a></li>
+								<li><a class="end" href="fund_list_global_layer.html">글로벌 제휴사 레이어</a></li>
+								<li><a class="end" href="fund_theme_details.html">상세(공통 레이아웃)</a></li>
+							</ul>
+						</li>
+						<li>
+							<a class="end" href="tt.html">연금 펀드</a>
+							<ul class="list_depth2">
+								<li><a class="end" href="fund_list_pension.html">목록(전체,TDF,RIF)</a></li>
+								<li><a class="end" href="fund_theme_details.html">상세(공통 레이아웃)</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li><a class="another" href='javascript:alert("링크 준비중입니다.").html'>은퇴솔루션(외부링크)</a></li>
+				<li>
+					<a class="end" href="tt.html">지식 PLUS (~9/20)</a>
+					<ul class="list_depth1">
+						<li><a class="another" href='javascript:alert("링크 준비중입니다.").html'>펀드스토리(외부링크)</a></li>
+						<li>
+							<a class="end" href="tt.html">출퇴근 5분경제 & 투자탐구생활</a>
+							<ul class="list_depth2">
+								<li><a class="end" href="plus_economy_list.html">목록</a></li>
+								<li><a class="end" href="plus_economy_no_list.html">검색결과 없을때(공통)</a></li>
+								<li><a class="more" href="plus_economy_view.html">상세(팝업 포함)</a></li>
+							</ul>
+						</li>
+						<li>
+							<a class="end" href="tt.html">펀드TV</a>
+							<ul class="list_depth2">
+								<li><a class="end" href="plus_fund_tv.html">목록(컨텐츠 클릭시 바로 상세)</a></li>
+							</ul>
+						</li>
+						<li>
+							<a class="end" href="tt.html">SETICEO</a>
+							<ul class="list_depth2">
+								<li><a class="end" href="plus_fund_sericeo_list.html">목록</a></li>
+								<li><a class="end" href="plus_fund_sericeo_view.html">상세</a></li>
+							</ul>
+						</li>
+						<li><a class="end" href="topic_list.html">TOPIC검색</a></li>
+					</ul>
+				</li>
+				<li>
+					<a class="end" href="tt.html">이벤트 (~09/20)</a>
+					<ul class="list_depth1">
+						<li>
+							<a class="end" href="tt.html">진행중 이벤트</a>
+							<ul class="list_depth2">
+								<li><a class="end" href="event_ing.html">목록</a></li>
+							</ul>
+						</li>
+						<li>
+							<a class="end" href="tt.html">종료된 이벤트</a>
+							<ul class="list_depth2">
+								<li><a class="end" href="event_end_list.html">목록</a></li>
+								<li><a class="end" href="event_end_view.html">상세</a></li>
+							</ul>
+						</li>
+						<li>
+							<a class="end" href="tt.html">사용후기</a>
+							<ul class="list_depth2">
+								<li><a class="end" href="use_review_list.html">목록</a></li>
+								<li><a class="end" href="use_review_view.html">상세</a></li>
+								<li><a class="end" href="notice_write.html">입력</a></li>
+							</ul>
+						</li>
+						<li>
+							<a class="end" href="tt.html">사용인증</a>
+							<ul class="list_depth2">
+								<li><a class="end" href="use_review_list2.html">목록</a></li>
+								<li><a class="end" href="use_review_view2.html">상세</a></li>
+								<li><a class="end" href="notice_write_file.html">입력</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a class="end" href="tt.html">공지사항 (~09/20)</a>
+					<ul class="list_depth1">
+						<li><a class="end" href="notice_list.html">목록</a></li>
+						<li><a class="end" href="notice_view.html">상세</a></li>
+					</ul>
+				</li>
+				<li>
+					<a class="end" href="tt.html">MY리스트 (~9/20)</a>
+					<ul class="list_depth1">
+						<li>
+							<a class="end" href="tt.html">MY 펀드</a>
+							<ul class="list_depth2">
+								<li><a class="end" href="myfund_list.html">목록(펀드추가 레이어)</a></li>
+								<li><a class="end" href="myfund_nolist.html">목록 없을때</a></li>
+								<li><a class="end" href="myfund_layer_group.html">그룹편집 레이어</a></li>
+							</ul>
+						</li>
+						<li>
+							<a class="end" href="tt.html">MY 콘텐츠</a>
+							<ul class="list_depth2">
+								<li><a class="end" href="myContent_list.html">목록</a></li>
+								<li><a class="end" href="myContent_nolist.html">목록 없을때(TOPIC레이어)</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a class="end" href="tt.html">펀드비교함 (~9/27)</a>
+					<ul class="list_depth1">
+						<li><a class="end" href="fundDiff_btn.html">버튼 및 추가완료 팝업</a></li>
+						<li><a class="end" href="fundDiff_layer.html">비교함 레이어</a></li>
+						<li><a class="end" href="fundDiff_list.html">목록2개</a></li>
+						<li><a class="end" href="fundDiff_list_multi.html">목록3개</a></li>
+					</ul>
+				</li>
+				<li>
+					<a class="end" href="tt.html">통합검색 (~09/27)</a>
+					<ul class="list_depth1">
+						<li><a class="end" href="search_list.html">전체목록</a></li>
+						<li><a class="end" href="search_list_ctg.html">카테고리</a></li>
+						<li><a class="end" href="search_no_list.html">검색결과 없을때</a></li>
+					</ul>
+				</li>
+				<li>
+					<a class="end" href="tt.html">회원영역 (~09/27)</a>
+					<ul class="list_depth1">
+						<li><a class="end" href="login.html">로그인</a></li>
+						<li><a class="end" href="join.html">회원가입</a></li>
+						<li><a class="end" href="user_info_check.html">가입확인</a></li>
+						<li><a class="end" href="user_info_change.html">정보변경</a></li>
+						<li><a class="end" href="user_pop_01.html">비밀번호 변경 팝업</a></li>
+						<li><a class="end" href="user_pop_02.html">회원탈퇴 팝업</a></li>
+					</ul>
+				</li>
+				<li>
+					<a class="end" href="tt.html">콘텐츠 서브메인 (~9/27)</a>
+					<ul class="list_depth1">
+						<li><a class="end" href="sub_main.html">메인</a></li>
+						<li>
+							<a class="end" href="sub_economy_list.html">
+								출퇴근5분경제
+								<i>(리스트)</i>
+							</a>
+						</li>
+						<li>
+							<a class="end" href="sub_economy_view.html">
+								출퇴근5분경제
+								<i>(상세)</i>
+							</a>
+						</li>
+						<li><a class="end" href="sub_fund_list_them.html">테마별 펀드</a></li>
+						<li><a class="end" href="sub_fund_theme_details.html">펀드 상세페이지</a></li>
+						<li><a class="end" href="sub_topic_list.html">TOPIC</a></li>
+					</ul>
+				</li>
+				<li><a class="end" href="terms.html">이용약관 (~09/27)</a></li>
+				<li><a class="end" href="policy.html">개인정보처리방침 (~09/27)</a></li>
+			</ul>
+		</div>
+	</body>
+	<script src="js/jquery-2.2.4.min.js"></script>
+	<script>
+		$(function() {
+			$(".list_coding_work li a").each(function() {
+				var $this = $(this),
+					$depth1 = $this.siblings("ul");
+
+				if ($this.siblings().length > 0) {
+					$this.attr("href", "javascript:void(0)");
+					$this.addClass("noList");
+					$this.append('<i class="hasList" aria-hidden="true">+</i>');
+					$this.click(function() {
+						if ($depth1.hasClass("on")) {
+							$depth1.removeClass("on");
+						} else {
+							if ($this.parents("list_depth1")) {
+								$(".list_depth2").removeClass("on");
+							} else {
+								$(".list_depth1").removeClass("on");
+							}
+							$depth1.addClass("on");
+						}
+					});
+				} else {
+					//$this.append('<i class="hasList" aria-hidden="true"></i>');
+				}
+			});
+
+			var allItem = $("li > a").length - $("li >a.noList").length - $("a.another").length,
+				ing = $("a.ing:not(.noList)").length,
+				end = $("a.end:not(.noList)").length;
+			count = Math.floor((end / (ing + allItem)) * 100);
+
+			$(".state_all").text(allItem);
+			$(".state_ing").text(ing);
+			$(".state_end").text(end);
+			$(".state_count").text(count + "%");
+		});
+	</script>
+</html>

@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="viewport" content="initial-scale=1.0,user-scalable=no,maximum-scale=1.5,width=device-width,minimal-ui" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>삼성자산운용 펀드솔루션</title>
+		<meta name="keywords" content="펀드, 펀드솔루션, fund, 삼성자산운용 펀드솔루션, 펀드, 투자, 부자, 금융, 재테크, 환율, 삼성, 연금, 노후대비, FP, 적립식투자" />
+		<meta name="description" content="세상의 모든 투자, 쉽고 편하게, 삼성자산운용 펀드솔루션" />
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500&amp;display=swap&amp;subset=korean" />
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/common.css" />
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+	<body>
+		<!--skip 네비-->
+		<div id="skip">
+			<a href="#gnb">주메뉴 바로가기</a>
+			<a href="#contents">본문 바로가기</a>
+			<a href="#footer">사이트 정보 바로가기</a>
+		</div>
+		<div id="wrap">
+			<!-- 상단 공지-->
+			<!-- [D] 서브페이지 일 경우 sub 클래스 추가-->
+			<!-- header-->
+			<header class="sub" id="header">
+				<div class="inner">
+					<article class="header_main inner_content">
+						<h1 class="title_sub_page"><a href="#;">MY 리스트</a></h1>
+						<a class="btn_sub_back" href="ci.html">
+							<i class="ico_back" aria-hidden="true"></i>
+							<span class="blind">뒤로가기</span>
+						</a>
+						<!-- 우측 버튼 2종 영역-->
+						<!-- [D] btn_open_form 클릭시  header_btn_wrap 에 on 클래스로 보여짐이 제어됨-->
+						<div class="header_btn_wrap">
+							<button class="header_search xs btn_search btn_open_form"><span class="blind">검색</span></button>
+							<div class="header_search_form">
+								<label class="blind" for="hd_input_form">검색어 입력</label>
+								<input class="del_toggle" type="text" id="hd_input_form" placeholder="검색어를 입력해주세요. " />
+								<button class="btn_input_delete hide"><i class="blind">검색어 삭제후 다시 입력하기</i></button>
+							</div>
+							<button class="header_search xs btn_search btn_form_search"><span class="blind">검색</span></button>
+							<button class="header_search_close btn_close"><span class="blind">검색영역 닫기</span></button>
+							<!-- [D] 해당버튼 클릭시 .gnb_wrap 에 on 클래스가 추가됨-->
+							<button class="header_all_meun xs btn_hambuger">
+								<i aria-hidden="true"></i>
+								<span class="blind">전체메뉴 보기</span>
+							</button>
+						</div>
+						<!-- 주메뉴 영역-->
+						<div class="gnb_wrap">
+							<!-- 상단-->
+							<div class="gnb_top">
+								<section class="user_menu clear inner_content">
+									<h1 class="blind">사용자 메뉴</h1>
+									<a class="link_main fl" href="#;"><span class="blind">메인 바로가기</span></a>
+									<ul class="list_user_menu fl">
+										<li><a href="#;">로그인</a></li>
+										<li><a href="#;">회원가입</a></li>
+										<li><a href="#;">MY 리스트</a></li>
+									</ul>
+									<!-- 사용자메뉴 버튼-->
+									<div class="user_menu_btn fr">
+										<a class="user_setting" href="#;"><span class="blind">설정 바로가기</span></a>
+										<!-- [D] 해당버튼 클릭시 .gnb_wrap 에 on 클래스가 제거됨-->
+										<button class="btn_close"><span class="blind">닫기</span></button>
+									</div>
+								</section>
+								<section class="gnb_search_form">
+									<h1 class="blind">검색영역</h1>
+									<div class="basic_search_wrap left">
+										<label class="blind" for="gnbSearch">검색어 입력하기</label>
+										<input class="common_search_input" type="text" placeholder="검색어를 입력해주세요." id="gnbSearch" />
+										<div class="btn_wrap">
+											<button class="gnb_search_del hide"><span class="blind">내용삭제</span></button>
+											<button class="btn_search xs"><span class="blind">검색</span></button>
+										</div>
+									</div>
+								</section>
+								<section class="gnb_fund_wrap inner_content">
+									<ul class="list_frame_content">
+										<!--prettier-ignore-->
+										<li><a class="blue" href="#;">테마별<br>펀드</a></li>
+										<!--prettier-ignore-->
+										<li><a class="blue" href="#;">국가별<br/>보기</a></li>
+										<!--prettier-ignore-->
+										<li><a class="blue" href="#;">노후대비<br/>연금펀드</a></li>
+										<!--prettier-ignore-->
+										<li><a class="view_all_fund" href="#;">모두<br/>보기</a></li>
+									</ul>
+								</section>
+								<!-- 배너-->
+								<a class="gnb_banner_wrap" href="#;"><img src="img/@tmp_banner_gnb.jpg" alt="펀드선택 결정장애는 펀드자판기로 해결하세요!" /></a>
+							</div>
+							<ul class="gub_list">
+								<li>
+									<a href="#;"><span class="name_gnb">은퇴솔루션</span></a>
+								</li>
+								<li class="inner_depth on">
+									<a href="#;"><span class="name_gnb gnb_new">지식PLUS</span></a>
+									<ul class="gnb_depth">
+										<li><a href="#;">펀드스토리</a></li>
+										<li><a href="#;">출퇴근 5분 경제</a></li>
+										<li><a href="#;">투자탐구생활</a></li>
+										<li><a href="#;">펀드TV</a></li>
+										<li><a href="#;">SERICEO</a></li>
+									</ul>
+								</li>
+								<li class="inner_depth">
+									<a href="#;"><span class="name_gnb">이벤트</span></a>
+									<ul class="gnb_depth">
+										<li><a href="#;">이벤트</a></li>
+										<li><a href="#;">사용후기</a></li>
+										<li><a href="#;">사용인증</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="#;"><span class="name_gnb">공지사항</span></a>
+								</li>
+							</ul>
+						</div>
+						<hr />
+					</article>
+				</div>
+			</header>
+			<!--비쥬얼 영역-->
+			<!-- main-->
+			<main id="container">
+				<article class="content_top_wrap full_size">
+					<ul class="list_content_tab">
+						<li class="on"><a class="btn_ct_tab" href="#">MY 펀드</a></li>
+						<li><a class="btn_ct_tab" href="#">MY 콘텐츠</a></li>
+					</ul>
+					<article class="my_list_wrap">
+						<!--타이틀-->
+						<div class="title_wrap">
+							<div class="img_my_list type_group" aria-hidden="true"></div>
+							<button class="title_my_list">
+								펀드 GROUP
+								<span class="blind">수정하기</span>
+								<span class="ico_pencil_white" aria-hidden="true"></span>
+							</button>
+						</div>
+						<!-- 타이틀 하단 옵션영역-->
+						<div class="item_option_group">
+							<div class="basic_select_box line">
+								<label for="selectmyList1">
+									<span class="name_select">전체</span>
+									<select class="basic_select" name="" id="selectmyList1">
+										<option value="전체">전체</option>
+										<option value="목록1">목록1</option>
+										<option value="목록2">목록2</option>
+										<option value="목록3">목록3</option>
+										<option value="목록4">목록4</option>
+									</select>
+									<i class="ico_arrow" aria-hidden="true"></i>
+								</label>
+							</div>
+						</div>
+						<!-- 카카오톡 공유-->
+						<div class="share_wrap">
+							<a class="ico_share share_kakao" href="#;"><span class="blind">카카오톡 공유</span></a>
+						</div>
+					</article>
+				</article>
+				<article class="content_main_wrap">
+					<article class="content_myList_wrap">
+						<h2 class="blind">펀드 목록</h2>
+						<div class="fund_list_title md">
+							<div class="title_area">
+								<h3 class="title_list_fund">총 1,000개</h3>
+								<span class="title_sub_info">(2019.07.23 기준)</span>
+							</div>
+							<div class="title_option_area"><button class="btn_add_block">펀드추가</button></div>
+						</div>
+						<!-- 펀드 리스트-->
+						<div class="list_product">
+							<div class="box_fund">
+								<article class="item_info_wrap">
+									<h1 class="blind">펀드 정보</h1>
+									<section class="item_tag_wrap"></section>
+									<!-- 옵션영역-->
+									<section class="option_wrap">
+										<h1 class="blind">상품특징</h1>
+										<!-- 체크-->
+										<div class="fund_check_wrap">
+											<label class="item_check_wrap" for="ck0">
+												<input class="blind" type="checkbox" name="" id="ck0" />
+												<span class="blind">선택</span>
+												<!--[D] 네모난 타입은 square 클래스 추가-->
+												<span class="check_state lg"><span class="checkmark" aria-hidden="true"></span></span>
+											</label>
+										</div>
+										<!-- 라벨-->
+										<article class="label_wrap">
+											<h2 class="blind">특징 목록</h2>
+											<ul class="list_inline_label xs">
+												<li><span class="btn_basic square line_blue xs">혼합형</span></li>
+												<li class="span"><button class="btn_basic square xs">글로벌 공격적자산배분</button></li>
+											</ul>
+										</article>
+									</section>
+									<!-- 펀드명-->
+									<section class="item_name_wrap">
+										<h1 class="blind">상품명</h1>
+										<a class="name_fund" href="#;"><span>미래에셋퇴직플랜BRICs 업종대표40 증권자투자신탁1(채권혼합) 종류 업종대표40 증권자투자신탁1(채권혼합) 종류</span></a>
+									</section>
+									<!-- 수익률 및 차트-->
+									<section class="item_data_wrap">
+										<!-- 수익률-->
+										<section class="data_info">
+											<article class="fund_data">
+												<strong class="blind">수익률</strong>
+												<p class="text_profits">
+													<em>999.9</em>
+													<span>%</span>
+												</p>
+												<strong class="blind">기준 데이터</strong>
+												<p class="text_profits_info">3개월 수익률</p>
+											</article>
+										</section>
+										<!-- 차트-->
+										<section class="chart_info">
+											<h1 class="blind">차트영역</h1>
+											<div class="fund_chart_wrap"><img src="img/@tmp_list_banner.png" alt="" /></div>
+										</section>
+									</section>
+								</article>
+								<div class="fund_bottom_wrap"></div>
+							</div>
+							<div class="box_fund">
+								<article class="item_info_wrap">
+									<h1 class="blind">펀드 정보</h1>
+									<section class="item_tag_wrap"></section>
+									<!-- 옵션영역-->
+									<section class="option_wrap">
+										<h1 class="blind">상품특징</h1>
+										<!-- 체크-->
+										<div class="fund_check_wrap">
+											<label class="item_check_wrap" for="ck1">
+												<input class="blind" type="checkbox" name="" id="ck1" />
+												<span class="blind">선택</span>
+												<!--[D] 네모난 타입은 square 클래스 추가-->
+												<span class="check_state lg"><span class="checkmark" aria-hidden="true"></span></span>
+											</label>
+										</div>
+										<!-- 라벨-->
+										<article class="label_wrap">
+											<h2 class="blind">특징 목록</h2>
+											<ul class="list_inline_label xs">
+												<li><span class="btn_basic square line_blue xs">혼합형</span></li>
+												<li class="span"><button class="btn_basic square xs">글로벌 공격적자산배분</button></li>
+											</ul>
+										</article>
+									</section>
+									<!-- 펀드명-->
+									<section class="item_name_wrap">
+										<h1 class="blind">상품명</h1>
+										<a class="name_fund" href="#;"><span>미래에셋퇴직플랜BRICs 업종대표40 증권자투자신탁1(채권혼합) 종류 업종대표40 증권자투자신탁1(채권혼합) 종류</span></a>
+									</section>
+									<!-- 수익률 및 차트-->
+									<section class="item_data_wrap">
+										<!-- 수익률-->
+										<section class="data_info">
+											<article class="fund_data">
+												<strong class="blind">수익률</strong>
+												<p class="text_profits">
+													<em>999.9</em>
+													<span>%</span>
+												</p>
+												<strong class="blind">기준 데이터</strong>
+												<p class="text_profits_info">3개월 수익률</p>
+											</article>
+										</section>
+										<!-- 차트-->
+										<section class="chart_info">
+											<h1 class="blind">차트영역</h1>
+											<div class="fund_chart_wrap"><img src="img/@tmp_list_banner.png" alt="" /></div>
+										</section>
+									</section>
+								</article>
+								<div class="fund_bottom_wrap"></div>
+							</div>
+							<!--더보기-->
+							<div class="more_btn_wrap mt35">
+								<button class="btn_round_add blue"><span class="blind">더보기</span></button>
+							</div>
+						</div>
+					</article>
+					<article class="fixed_btn_wrap hide">
+						<button class="btn_fixed gary" type="button">선택해제</button>
+						<button class="btn_fixed blue" type="button">삭제</button>
+					</article>
+				</article>
+				<!-- [D] 비교함 작업 영역-->
+				<div class="diff_btn_wrap">
+					<strong class="blind">현재 담겨져 있는 상품 갯수</strong>
+					<span class="num_diff">
+						1
+						<i class="blind">개</i>
+					</span>
+					<button class="btn_diff"><span>비교함</span></button>
+				</div>
+				<!-- [D] 비교함 추가 완료 레이어-->
+				<div class="pop_box hide">
+					<div class="dimmed"></div>
+					<div class="diff_alarm_box">
+						<p class="txt_alarm">
+							비교함에 펀드가
+							<br />
+							추가되었습니다.
+						</p>
+					</div>
+				</div>
+			</main>
+			<!--footer-->
+			<footer id="footer">
+				<h1 class="blind">사이트 정보 영역</h1>
+				<ul class="list_policy">
+					<li><a>이용약관</a></li>
+					<li><a>개인정보 처리방침</a></li>
+				</ul>
+				<dl class="info_site txt_footer">
+					<dt class="blind">주소</dt>
+					<dd>
+						<strong class="blind">우편번호</strong>
+						<span>06620</span>
+						<strong class="blind">나머지 주소</strong>
+						<!--prettier-ignore-->
+						<span>서울특별시 서초구 서초대로74길 11<br>삼성자산운용 (16~18층)</span>
+					</dd>
+				</dl>
+				<!--prettier-ignore-->
+				<p class="txt_footer">콜센터 <a class="txt_footer" tel="080-377-4777">080-377-4777</a>(상담시간:평일 오전 8시~오후5시)</p>
+				<p class="txt_footer copy">&copy; SAMSUNG ASSET MANAGEMENT. ALL RIGHTS RESERVED</p>
+				<button class="btn_top fixed"><span class="blind">최상단 스크롤 이동하기</span></button>
+			</footer>
+			<!-- script-->
+			<script src="js/jquery-2.2.4.min.js"></script>
+			<script src="js/common.js"></script>
+			<!--script(src="js/sub.js")-->
+			<script>
+				$(function() {
+					$(".btn_diff").click(function() {
+						$(".pop_box").removeClass("hide");
+						setTimeout(function() {
+							$(".pop_box").addClass("hide");
+						}, 1000);
+					});
+				});
+			</script>
+		</div>
+	</body>
+</html>

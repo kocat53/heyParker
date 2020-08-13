@@ -1,0 +1,478 @@
+<article class="content_main_wrap">
+	<!-- 검색-->
+	<article class="sub_search_wrap">
+		<h2 class="blind">검색영역</h2>
+		<div class="basic_search_wrap sub left">
+			<label class="blind" for="1">검색어 입력하기</label>
+			<input class="common_search_input" type="text" placeholder="찾으시는 펀드명을 입력해보세요." id="1" />
+			<div class="btn_wrap">
+				<button class="gnb_search_del hide"><span class="blind">내용삭제</span></button>
+				<button class="btn_search sm"><span class="blind">검색</span></button>
+			</div>
+		</div>
+	</article>
+	<!-- 옵션-->
+	<article class="select_item_option">
+		<h2 class="blind">옵션 선택</h2>
+		<div class="box_fund_option">
+			<label class="basic_switch" for="switch_fund">
+				<input class="blind" type="checkbox" id="switch_fund" />
+				<span class="switch_bar" aira-hidden="true"></span>
+				<!--prettier-ignore-->
+				<span class="text_switch"><span>삼성<br>펀드</span></span>
+			</label>
+			<!-- 옵션 선택-->
+			<div class="option_select_wrap inline_list_wrap">
+				<ul class="list_select_option">
+					<li>
+						<button>
+							펀드유형
+							<i class="ico_arrow" aria-hidden="true"></i>
+						</button>
+					</li>
+					<li>
+						<button>
+							운용규모
+							<i class="ico_arrow" aria-hidden="true"></i>
+						</button>
+					</li>
+					<li>
+						<button>
+							상품유형
+							<i class="ico_arrow" aria-hidden="true"></i>
+						</button>
+					</li>
+					<li>
+						<button>
+							연금유형
+							<i class="ico_arrow" aria-hidden="true"></i>
+						</button>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- [D] 옵션선택영역-->
+		<!--article.option_result h2.blind 체크된 옵션-->
+	</article>
+	<!-- 본문내용시작-->
+	<!--[D] 펀드 타입에는 product_wrap 클래스 추가-->
+	<article class="inner_content product_wrap">
+		<h2 class="blind">펀드 목록</h2>
+		<!-- 타이틀-->
+		<div class="fund_list_title">
+			<div class="title_area">
+				<h3 class="title_list_fund">총 1,000개</h3>
+				<span class="title_sub_info">(2019.07.23 기준)</span>
+			</div>
+			<div class="title_option_area">
+				<div class="basic_select_box ">
+					<label for="selectselect1">
+						<span class="name_select">3개월 수익률</span>
+						<select class="basic_select" name="" id="selectselect1">
+							<option value="3개월 수익률">3개월 수익률</option>
+							<option value="2개월 수익률">2개월 수익률</option>
+							<option value="1개월 수익률">1개월 수익률</option>
+						</select>
+						<i class="ico_arrow" aria-hidden="true"></i>
+					</label>
+				</div>
+			</div>
+		</div>
+		<!-- 펀드 리스트-->
+		<div class="list_product">
+			<div class="box_fund">
+				<article class="item_info_wrap">
+					<h1 class="blind">펀드 정보</h1>
+					<section class="item_tag_wrap"></section>
+					<!-- 옵션영역-->
+					<section class="option_wrap">
+						<h1 class="blind">상품특징</h1>
+						<!-- 체크-->
+						<div class="fund_check_wrap">
+							<label class="item_check_wrap" for="ck5">
+								<input class="blind" type="checkbox" name="" id="ck5" />
+								<span class="blind">선택</span>
+								<!--[D] 네모난 타입은 square 클래스 추가-->
+								<span class="check_state lg"><span class="checkmark" aria-hidden="true"></span></span>
+							</label>
+						</div>
+						<!-- 라벨-->
+						<article class="label_wrap">
+							<h2 class="blind">특징 목록</h2>
+							<ul class="list_inline_label xs">
+								<li><span class="btn_basic square line_blue xs">혼합형</span></li>
+								<li class="span"><button class="btn_basic square xs">글로벌 공격적자산배분</button></li>
+							</ul>
+						</article>
+					</section>
+					<!-- 펀드명-->
+					<section class="item_name_wrap">
+						<h1 class="blind">상품명</h1>
+						<a class="name_fund" href="#;"><span>미래에셋퇴직플랜BRICs 업종대표40 증권자투자신탁1(채권혼합) 종류 업종대표40 증권자투자신탁1(채권혼합) 종류</span></a>
+					</section>
+					<!-- 수익률 및 차트-->
+					<section class="item_data_wrap">
+						<!-- 수익률-->
+						<section class="data_info">
+							<article class="fund_data">
+								<strong class="blind">수익률</strong>
+								<p class="text_profits">
+									<em>999.9</em>
+									<span>%</span>
+								</p>
+								<strong class="blind">기준 데이터</strong>
+								<p class="text_profits_info">3개월 수익률</p>
+							</article>
+						</section>
+						<!-- 차트-->
+						<section class="chart_info">
+							<h1 class="blind">차트영역</h1>
+							<div class="fund_chart_wrap"><img src="img/@tmp_list_banner.png" alt="" /></div>
+						</section>
+					</section>
+				</article>
+				<div class="fund_bottom_wrap"></div>
+			</div>
+			<div class="box_fund">
+				<article class="item_info_wrap">
+					<h1 class="blind">펀드 정보</h1>
+					<section class="item_tag_wrap"></section>
+					<!-- 옵션영역-->
+					<section class="option_wrap">
+						<h1 class="blind">상품특징</h1>
+						<!-- 체크-->
+						<div class="fund_check_wrap">
+							<label class="item_check_wrap" for="ck6">
+								<input class="blind" type="checkbox" name="" id="ck6" />
+								<span class="blind">선택</span>
+								<!--[D] 네모난 타입은 square 클래스 추가-->
+								<span class="check_state lg"><span class="checkmark" aria-hidden="true"></span></span>
+							</label>
+						</div>
+						<!-- 라벨-->
+						<article class="label_wrap">
+							<h2 class="blind">특징 목록</h2>
+							<ul class="list_inline_label xs">
+								<li><span class="btn_basic square line_blue xs">혼합형</span></li>
+								<li class="span"><button class="btn_basic square xs">글로벌 공격적자산배분</button></li>
+							</ul>
+						</article>
+					</section>
+					<!-- 펀드명-->
+					<section class="item_name_wrap">
+						<h1 class="blind">상품명</h1>
+						<a class="name_fund" href="#;"><span>미래에셋퇴직플랜BRICs 업종대표40 증권자투자신탁1(채권혼합) 종류 업종대표40 증권자투자신탁1(채권혼합) 종류</span></a>
+					</section>
+					<!-- 수익률 및 차트-->
+					<section class="item_data_wrap">
+						<!-- 수익률-->
+						<section class="data_info">
+							<article class="fund_data">
+								<strong class="blind">수익률</strong>
+								<p class="text_profits">
+									<em>999.9</em>
+									<span>%</span>
+								</p>
+								<strong class="blind">기준 데이터</strong>
+								<p class="text_profits_info">3개월 수익률</p>
+							</article>
+						</section>
+						<!-- 차트-->
+						<section class="chart_info">
+							<h1 class="blind">차트영역</h1>
+							<div class="fund_chart_wrap"><img src="img/@tmp_list_banner.png" alt="" /></div>
+						</section>
+					</section>
+				</article>
+				<div class="fund_bottom_wrap"></div>
+			</div>
+			<div class="box_fund">
+				<article class="item_info_wrap">
+					<h1 class="blind">펀드 정보</h1>
+					<section class="item_tag_wrap"></section>
+					<!-- 옵션영역-->
+					<section class="option_wrap">
+						<h1 class="blind">상품특징</h1>
+						<!-- 체크-->
+						<div class="fund_check_wrap">
+							<label class="item_check_wrap" for="ck7">
+								<input class="blind" type="checkbox" name="" id="ck7" />
+								<span class="blind">선택</span>
+								<!--[D] 네모난 타입은 square 클래스 추가-->
+								<span class="check_state lg"><span class="checkmark" aria-hidden="true"></span></span>
+							</label>
+						</div>
+						<!-- 라벨-->
+						<article class="label_wrap">
+							<h2 class="blind">특징 목록</h2>
+							<ul class="list_inline_label xs">
+								<li><span class="btn_basic square line_blue xs">혼합형</span></li>
+								<li class="span"><button class="btn_basic square xs">글로벌 공격적자산배분</button></li>
+							</ul>
+						</article>
+					</section>
+					<!-- 펀드명-->
+					<section class="item_name_wrap">
+						<h1 class="blind">상품명</h1>
+						<a class="name_fund" href="#;"><span>미래에셋퇴직플랜BRICs 업종대표40 증권자투자신탁1(채권혼합) 종류 업종대표40 증권자투자신탁1(채권혼합) 종류</span></a>
+					</section>
+					<!-- 수익률 및 차트-->
+					<section class="item_data_wrap">
+						<!-- 수익률-->
+						<section class="data_info">
+							<article class="fund_data">
+								<strong class="blind">수익률</strong>
+								<p class="text_profits">
+									<em>999.9</em>
+									<span>%</span>
+								</p>
+								<strong class="blind">기준 데이터</strong>
+								<p class="text_profits_info">3개월 수익률</p>
+							</article>
+						</section>
+						<!-- 차트-->
+						<section class="chart_info">
+							<h1 class="blind">차트영역</h1>
+							<div class="fund_chart_wrap"><img src="img/@tmp_list_banner.png" alt="" /></div>
+						</section>
+					</section>
+				</article>
+				<div class="fund_bottom_wrap"></div>
+			</div>
+			<!-- [D] 클래스 더보기-->
+			<div class="box_fund">
+				<article class="item_info_wrap">
+					<h1 class="blind">
+						펀드 정보
+						<!-- 라벨-->
+					</h1>
+					<section class="option_wrap">
+						<div class="fund_check_wrap">
+							<label class="item_check_wrap" for="ck1991">
+								<input class="blind" type="checkbox" name="" id="ck1991" />
+								<span class="blind">선택</span>
+								<!--[D] 네모난 타입은 square 클래스 추가-->
+								<span class="check_state lg"><span class="checkmark" aria-hidden="true"></span></span>
+							</label>
+						</div>
+						<article class="label_wrap">
+							<h2 class="blind">특징 목록</h2>
+							<ul class="list_inline_label xs">
+								<li><span class="btn_basic square line_blue xs">혼합형</span></li>
+								<li class="span"><button class="btn_basic square xs">글로벌 공격적자산배분</button></li>
+							</ul>
+						</article>
+					</section>
+					<!-- 펀드명-->
+					<section class="item_name_wrap">
+						<h1 class="blind">상품명</h1>
+						<a class="name_fund" href="#;"><span>미래에셋퇴직플랜BRICs 업종대표40 증권자투자신탁1(채권혼합) 종류 업종대표40 증권자투자신탁1(채권혼합) 종류</span></a>
+					</section>
+					<!-- 수익률 및 차트-->
+					<section class="item_data_wrap">
+						<!-- 수익률-->
+						<section class="data_info">
+							<article class="fund_data">
+								<strong class="blind">수익률</strong>
+								<p class="text_profits">
+									<em>999.9</em>
+									<span>%</span>
+								</p>
+								<strong class="blind">기준 데이터</strong>
+								<p class="text_profits_info">3개월 수익률</p>
+							</article>
+						</section>
+						<!-- 차트-->
+						<section class="chart_info">
+							<h1 class="blind">차트영역</h1>
+							<div class="fund_chart_wrap"><img src="img/@tmp_list_banner.png" alt="" /></div>
+						</section>
+					</section>
+				</article>
+				<div class="fund_bottom_wrap">
+					<div class="box_depth_wrap">
+						<!-- 더보기 버튼-->
+						<button class="btn_more_depth">
+							<span class="off_text">
+								클래스 더보기
+								<span>(3)</span>
+							</span>
+							<span class="on_text">클래스 닫기</span>
+							<i class="ico_arrow" aria-hidden="true"></i>
+						</button>
+						<!-- 뎁스영역-->
+						<div class="list_depth_fund">
+							<div class="box_fund">
+								<article class="item_info_wrap">
+									<h1 class="blind">펀드 정보</h1>
+									<section class="item_tag_wrap"></section>
+									<!-- 옵션영역-->
+									<section class="option_wrap">
+										<h1 class="blind">상품특징</h1>
+										<!-- 체크-->
+										<div class="fund_check_wrap">
+											<label class="item_check_wrap" for="ck18">
+												<input class="blind" type="checkbox" name="" id="ck18" />
+												<span class="blind">선택</span>
+												<!--[D] 네모난 타입은 square 클래스 추가-->
+												<span class="check_state lg"><span class="checkmark" aria-hidden="true"></span></span>
+											</label>
+										</div>
+										<!-- 라벨-->
+										<article class="label_wrap">
+											<h2 class="blind">특징 목록</h2>
+											<ul class="list_inline_label xs">
+												<li><span class="btn_basic square line_blue xs">혼합형</span></li>
+												<li class="span"><button class="btn_basic square xs">글로벌 공격적자산배분</button></li>
+											</ul>
+										</article>
+									</section>
+									<!-- 펀드명-->
+									<section class="item_name_wrap">
+										<h1 class="blind">상품명</h1>
+										<a class="name_fund" href="#;"><span>미래에셋퇴직플랜BRICs 업종대표40 증권자투자신탁1(채권혼합) 종류 업종대표40 증권자투자신탁1(채권혼합) 종류</span></a>
+									</section>
+									<!-- 수익률 및 차트-->
+									<section class="item_data_wrap">
+										<!-- 수익률-->
+										<section class="data_info">
+											<article class="fund_data">
+												<strong class="blind">수익률</strong>
+												<p class="text_profits">
+													<em>999.9</em>
+													<span>%</span>
+												</p>
+												<strong class="blind">기준 데이터</strong>
+												<p class="text_profits_info">3개월 수익률</p>
+											</article>
+										</section>
+										<!-- 차트-->
+										<section class="chart_info">
+											<h1 class="blind">차트영역</h1>
+											<div class="fund_chart_wrap"><img src="img/@tmp_list_banner.png" alt="" /></div>
+										</section>
+									</section>
+								</article>
+								<div class="fund_bottom_wrap"></div>
+							</div>
+							<div class="box_fund">
+								<article class="item_info_wrap">
+									<h1 class="blind">펀드 정보</h1>
+									<section class="item_tag_wrap"></section>
+									<!-- 옵션영역-->
+									<section class="option_wrap">
+										<h1 class="blind">상품특징</h1>
+										<!-- 체크-->
+										<div class="fund_check_wrap">
+											<label class="item_check_wrap" for="ck19">
+												<input class="blind" type="checkbox" name="" id="ck19" />
+												<span class="blind">선택</span>
+												<!--[D] 네모난 타입은 square 클래스 추가-->
+												<span class="check_state lg"><span class="checkmark" aria-hidden="true"></span></span>
+											</label>
+										</div>
+										<!-- 라벨-->
+										<article class="label_wrap">
+											<h2 class="blind">특징 목록</h2>
+											<ul class="list_inline_label xs">
+												<li><span class="btn_basic square line_blue xs">혼합형</span></li>
+												<li class="span"><button class="btn_basic square xs">글로벌 공격적자산배분</button></li>
+											</ul>
+										</article>
+									</section>
+									<!-- 펀드명-->
+									<section class="item_name_wrap">
+										<h1 class="blind">상품명</h1>
+										<a class="name_fund" href="#;"><span>미래에셋퇴직플랜BRICs 업종대표40 증권자투자신탁1(채권혼합) 종류 업종대표40 증권자투자신탁1(채권혼합) 종류</span></a>
+									</section>
+									<!-- 수익률 및 차트-->
+									<section class="item_data_wrap">
+										<!-- 수익률-->
+										<section class="data_info">
+											<article class="fund_data">
+												<strong class="blind">수익률</strong>
+												<p class="text_profits">
+													<em>999.9</em>
+													<span>%</span>
+												</p>
+												<strong class="blind">기준 데이터</strong>
+												<p class="text_profits_info">3개월 수익률</p>
+											</article>
+										</section>
+										<!-- 차트-->
+										<section class="chart_info">
+											<h1 class="blind">차트영역</h1>
+											<div class="fund_chart_wrap"><img src="img/@tmp_list_banner.png" alt="" /></div>
+										</section>
+									</section>
+								</article>
+								<div class="fund_bottom_wrap"></div>
+							</div>
+							<div class="box_fund">
+								<article class="item_info_wrap">
+									<h1 class="blind">펀드 정보</h1>
+									<section class="item_tag_wrap"></section>
+									<!-- 옵션영역-->
+									<section class="option_wrap">
+										<h1 class="blind">상품특징</h1>
+										<!-- 체크-->
+										<div class="fund_check_wrap">
+											<label class="item_check_wrap" for="ck20">
+												<input class="blind" type="checkbox" name="" id="ck20" />
+												<span class="blind">선택</span>
+												<!--[D] 네모난 타입은 square 클래스 추가-->
+												<span class="check_state lg"><span class="checkmark" aria-hidden="true"></span></span>
+											</label>
+										</div>
+										<!-- 라벨-->
+										<article class="label_wrap">
+											<h2 class="blind">특징 목록</h2>
+											<ul class="list_inline_label xs">
+												<li><span class="btn_basic square line_blue xs">혼합형</span></li>
+												<li class="span"><button class="btn_basic square xs">글로벌 공격적자산배분</button></li>
+											</ul>
+										</article>
+									</section>
+									<!-- 펀드명-->
+									<section class="item_name_wrap">
+										<h1 class="blind">상품명</h1>
+										<a class="name_fund" href="#;"><span>미래에셋퇴직플랜BRICs 업종대표40 증권자투자신탁1(채권혼합) 종류 업종대표40 증권자투자신탁1(채권혼합) 종류</span></a>
+									</section>
+									<!-- 수익률 및 차트-->
+									<section class="item_data_wrap">
+										<!-- 수익률-->
+										<section class="data_info">
+											<article class="fund_data">
+												<strong class="blind">수익률</strong>
+												<p class="text_profits">
+													<em>999.9</em>
+													<span>%</span>
+												</p>
+												<strong class="blind">기준 데이터</strong>
+												<p class="text_profits_info">3개월 수익률</p>
+											</article>
+										</section>
+										<!-- 차트-->
+										<section class="chart_info">
+											<h1 class="blind">차트영역</h1>
+											<div class="fund_chart_wrap"><img src="img/@tmp_list_banner.png" alt="" /></div>
+										</section>
+									</section>
+								</article>
+								<div class="fund_bottom_wrap"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--더보기-->
+			<div class="more_btn_wrap">
+				<button class="btn_round_add blue"><span class="blind">더보기</span></button>
+			</div>
+		</div>
+	</article>
+	<article class="fixed_btn_wrap hide">
+		<button class="btn_fixed gary" type="button">선택해제</button>
+		<button class="btn_fixed blue" type="button">상품추가</button>
+	</article>
+</article>

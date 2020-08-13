@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="viewport" content="initial-scale=1.0,user-scalable=no,maximum-scale=1.5,width=device-width,minimal-ui" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>삼성자산운용 펀드솔루션</title>
+		<meta name="keywords" content="펀드, 펀드솔루션, fund, 삼성자산운용 펀드솔루션, 펀드, 투자, 부자, 금융, 재테크, 환율, 삼성, 연금, 노후대비, FP, 적립식투자" />
+		<meta name="description" content="세상의 모든 투자, 쉽고 편하게, 삼성자산운용 펀드솔루션" />
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500&amp;display=swap&amp;subset=korean" />
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/common.css" />
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+	<body>
+		<!--skip 네비-->
+		<div id="skip">
+			<a href="#gnb">주메뉴 바로가기</a>
+			<a href="#contents">본문 바로가기</a>
+			<a href="#footer">사이트 정보 바로가기</a>
+		</div>
+		<div id="wrap">
+			<!-- 상단 공지-->
+			<!-- [D] 서브페이지 일 경우 sub 클래스 추가-->
+			<!-- header-->
+			<header class="sub" id="header">
+				<div class="inner">
+					<article class="header_main inner_content">
+						<h1 class="title_sub_page"><a href="#;">개인정보처리방침</a></h1>
+						<a class="btn_sub_back" href="ci.html">
+							<i class="ico_back" aria-hidden="true"></i>
+							<span class="blind">뒤로가기</span>
+						</a>
+						<!-- 우측 버튼 2종 영역-->
+						<!-- [D] btn_open_form 클릭시  header_btn_wrap 에 on 클래스로 보여짐이 제어됨-->
+						<div class="header_btn_wrap">
+							<button class="header_search xs btn_search btn_open_form"><span class="blind">검색</span></button>
+							<div class="header_search_form">
+								<label class="blind" for="hd_input_form">검색어 입력</label>
+								<input class="del_toggle" type="text" id="hd_input_form" placeholder="검색어를 입력해주세요. " />
+								<button class="btn_input_delete hide"><i class="blind">검색어 삭제후 다시 입력하기</i></button>
+							</div>
+							<button class="header_search xs btn_search btn_form_search"><span class="blind">검색</span></button>
+							<button class="header_search_close btn_close"><span class="blind">검색영역 닫기</span></button>
+							<!-- [D] 해당버튼 클릭시 .gnb_wrap 에 on 클래스가 추가됨-->
+							<button class="header_all_meun xs btn_hambuger">
+								<i aria-hidden="true"></i>
+								<span class="blind">전체메뉴 보기</span>
+							</button>
+						</div>
+						<!-- 주메뉴 영역-->
+						<div class="gnb_wrap">
+							<!-- 상단-->
+							<div class="gnb_top">
+								<section class="user_menu clear inner_content">
+									<h1 class="blind">사용자 메뉴</h1>
+									<a class="link_main fl" href="#;"><span class="blind">메인 바로가기</span></a>
+									<ul class="list_user_menu fl">
+										<li><a href="#;">로그인</a></li>
+										<li><a href="#;">회원가입</a></li>
+										<li><a href="#;">MY 리스트</a></li>
+									</ul>
+									<!-- 사용자메뉴 버튼-->
+									<div class="user_menu_btn fr">
+										<a class="user_setting" href="#;"><span class="blind">설정 바로가기</span></a>
+										<!-- [D] 해당버튼 클릭시 .gnb_wrap 에 on 클래스가 제거됨-->
+										<button class="btn_close"><span class="blind">닫기</span></button>
+									</div>
+								</section>
+								<section class="gnb_search_form">
+									<h1 class="blind">검색영역</h1>
+									<div class="basic_search_wrap left">
+										<label class="blind" for="gnbSearch">검색어 입력하기</label>
+										<input class="common_search_input" type="text" placeholder="검색어를 입력해주세요." id="gnbSearch" />
+										<div class="btn_wrap">
+											<button class="gnb_search_del hide"><span class="blind">내용삭제</span></button>
+											<button class="btn_search xs"><span class="blind">검색</span></button>
+										</div>
+									</div>
+								</section>
+								<section class="gnb_fund_wrap inner_content">
+									<ul class="list_frame_content">
+										<!--prettier-ignore-->
+										<li><a class="blue" href="#;">테마별<br>펀드</a></li>
+										<!--prettier-ignore-->
+										<li><a class="blue" href="#;">국가별<br/>보기</a></li>
+										<!--prettier-ignore-->
+										<li><a class="blue" href="#;">노후대비<br/>연금펀드</a></li>
+										<!--prettier-ignore-->
+										<li><a class="view_all_fund" href="#;">모두<br/>보기</a></li>
+									</ul>
+								</section>
+								<!-- 배너-->
+								<a class="gnb_banner_wrap" href="#;"><img src="img/@tmp_banner_gnb.jpg" alt="펀드선택 결정장애는 펀드자판기로 해결하세요!" /></a>
+							</div>
+							<ul class="gub_list">
+								<li>
+									<a href="#;"><span class="name_gnb">은퇴솔루션</span></a>
+								</li>
+								<li class="inner_depth on">
+									<a href="#;"><span class="name_gnb gnb_new">지식PLUS</span></a>
+									<ul class="gnb_depth">
+										<li><a href="#;">펀드스토리</a></li>
+										<li><a href="#;">출퇴근 5분 경제</a></li>
+										<li><a href="#;">투자탐구생활</a></li>
+										<li><a href="#;">펀드TV</a></li>
+										<li><a href="#;">SERICEO</a></li>
+									</ul>
+								</li>
+								<li class="inner_depth">
+									<a href="#;"><span class="name_gnb">이벤트</span></a>
+									<ul class="gnb_depth">
+										<li><a href="#;">이벤트</a></li>
+										<li><a href="#;">사용후기</a></li>
+										<li><a href="#;">사용인증</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="#;"><span class="name_gnb">공지사항</span></a>
+								</li>
+							</ul>
+						</div>
+						<hr />
+					</article>
+				</div>
+			</header>
+			<!--비쥬얼 영역-->
+			<!-- main-->
+			<main id="container">
+				<div class="box_policy_wrap">
+					<dl class="item_policy">
+						<dt class="title_policy">총칙</dt>
+						<dd class="desc_policy">
+							<ul class="list_policy_desc">
+								<li><span>본 방침은 고객의 개인정보를 보호하고 불법적인 정보의 유출로 인하여 발생되는 고객의 피해를 방지하기 위하여 삼성자산운용(이하 "회사")이 취하고 있는 개인정보의 처리(수집, 저장, 이용, 제공, 파기 등)에 관한 사항을 담고 있습니다. 본 방침은 법령의 제ㆍ개정이나 정부 또는 회사의 운영 방침에 따라 변경될 수 있으며 변경시에는 개정 7일 전까지 회사의 인터넷 홈페이지를 통하여 변경내용이 공개됩니다.</span></li>
+							</ul>
+						</dd>
+					</dl>
+					<dl class="item_policy">
+						<dt class="title_policy">개인정보 수집항목, 방법 및 이용목적</dt>
+						<dd class="desc_policy">
+							<ul class="list_policy_desc">
+								<li>
+									<i>1)</i>
+									<span>회사가 수집하는 개인정보와 이용목적은 다음과 같습니다.</span>
+									<ul class="list_policy_depth">
+										<li>
+											<i>①</i>
+											<span>수집항목 : 회원의 핸드폰 번호, 이메일, 비밀번호</span>
+										</li>
+										<li>
+											<i>②</i>
+											<span>이용목적 : 회원 가입 및 관리 / 이메일, 모바일메시지 등을 통한 새로운 서비스 안내 / 뉴스레터 발송 / 신상품이나 이벤트 정보안내 / 접속빈도 파악 또는 고객의 서비스 이용에 대한 통계자료 작성 등</span>
+										</li>
+										<li>
+											<i>③</i>
+											<span>고객이 인터넷 홈페이지 서비스를 이용하거나 회사가 고객 정보를 처리하는 과정에서 접속 로그, 쿠키, 접속 IP, 서비스 이용기록 등과 같은 정보들이 생성되어 수집될 수 있습니다.</span>
+										</li>
+										<li>
+											<i>※</i>
+											<span>쿠키에 의한 개인정보 수집 : 회사의 인터넷 홈페이지는 귀하의 정보를 수시로 저장하고 찾아내는 '쿠키(cookie) 등 개인정보를 자동으로 수집하는 장치를 설치, 운용합니다. 쿠키란 홈페이지의 웹사이트를 운영하는데 이용되는 서버가 귀하의 브라우저에 보내는 아주 작은 텍스트 파일로서 귀하의 컴퓨터 하드디스크에 저장됩니다.</span>
+										</li>
+										<li>
+											<i>※</i>
+											<span>
+												쿠키 등 사용목적 : 회사는 회원과 비회원의 접속빈도나 방문시간 등을 분석하여 이용자의 취향과 관심분야를 파악하고, 각종 이벤트 참여 정도 및 방문 회수 파악 등을 통하여 개인별 맞춤 서비스 제공 및 마케팅을 위하여 쿠키 등을 사용합니다. 귀하는 쿠키 설치에 대한 선택권을 가지고 있습니다. 따라서, 귀하는 웹브라우저에서 옵션을 설정함으로써 모든 쿠키를 허용하거나, 쿠키가 저장될 때마다 확인을 거치거나, 아니면
+												모든 쿠키의 저장을 거부할 수도 있습니다.
+											</span>
+										</li>
+										<li>
+											<i>※</i>
+											<span>
+												쿠키 설정 거부 방법 : 쿠키설정을 거부하는 방법으로는 귀하가 사용하는 웹브라우저의 옵션을 선택함으로써 모든 쿠키를 허용하거나 쿠키를 저장할 때마다 확인을 거치거나, 모든 쿠키의 저장을 거부할 수 있습니다. 설정방법 예시(인터넷 익스플로러의 경우) : 웹브라우저 상단 도구 > 인터넷 옵션 > 개인정보 > 고급 > 쿠키차단 선택 / 단, 귀하가 쿠키 설치를 거부하였을 경우 서비스 제공에 어려움이 있을 수 있습니다.
+											</span>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<i>2)</i>
+									<span>회사는 상기의 정보를 다음과 같은 방법으로 수집합니다. 이 약관에 명시되지 않은 사항이 관계 법령에 규정되어 있을 경우에는 그 규정에 따릅니다.</span>
+									<ul class="list_policy_depth">
+										<li>
+											<i>①</i>
+											<span>인터넷 홈페이지 또는 서면양식을 통한 회원가입</span>
+										</li>
+										<li>
+											<i>②</i>
+											<span>펀드 판매사 등 제휴사로부터의 제공</span>
+										</li>
+										<li>
+											<i>③</i>
+											<span>로그분석 등을 통한 생성정보 수집</span>
+										</li>
+										<li>
+											<i>※</i>
+											<span>회사의 홈페이지에서는 회원들에게 무차별적으로 보내지는 타사의 메일을 차단하기 위해, 본 웹사이트에 게시된 이메일 주소가 전자우편 수집 프로그램이나 그 밖의 기술적 장치를 이용하여 무단으로 수집되는 것을 거부하며, 이를 위반할 경우 정보통신망법 등 관련 법령에 의해 형사처벌 됨을 유념하시길 바랍니다.</span>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<i>3)</i>
+									<span>회사는 고객이 제공한 개인정보를 상기의 목적 범위 내에서 이용하여야 합니다. 다만, 다음의 경우에는 예외적으로 목적 범위를 초과하여 이용할 수 있습니다.</span>
+									<ul class="list_policy_depth">
+										<li>
+											<i>①</i>
+											<span>고객으로부터 별도의 동의를 받는 경우</span>
+										</li>
+										<li>
+											<i>②</i>
+											<span>법률에 특별한 규정이 있는 경우</span>
+										</li>
+										<li>
+											<i>③</i>
+											<span>고객 또는 그 법정대리인이 의사표시를 할 수 없는 상태에 있거나 주소불명 등으로 사전 동의를 받을 수 없는 경우로서 명백히 고객 또는 제3자의 급박한 생명, 신체, 재산의 이익을 위하여 필요하다고 인정되는 경우</span>
+										</li>
+										<li>
+											<i>④</i>
+											<span>통계작성 및 학술연구 등의 목적을 위하여 필요한 경우로서 특정 개인을 알아볼 수 없는 형태로 개인정보를 제공하는 경우</span>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</dd>
+					</dl>
+					<dl class="item_policy">
+						<dt class="title_policy">개인정보의 처리 및 보유기간</dt>
+						<dd class="desc_policy">
+							<ul class="list_policy_desc">
+								<li>
+									<i>1)</i>
+									<span>회사 인터넷 홈페이지 회원, 뉴스레터신청 회원 : 회원탈퇴시까지</span>
+								</li>
+								<li>
+									<i>2)</i>
+									<span>투자풀 홈페이지 회원 : 회원자격 상실시까지</span>
+								</li>
+								<li>
+									<i>3)</i>
+									<span>경품행사 응모, 고객참여 이벤트, 뉴스레터신청 회원 등 : 응모시 고지된 시점까지</span>
+								</li>
+								<li>
+									<i>※</i>
+									<span>회사는 개인정보의 수집 및 이용목적이 달성된 후에는 해당 정보를 지체없이 파기합니다.</span>
+								</li>
+							</ul>
+						</dd>
+					</dl>
+					<dl class="item_policy">
+						<dt class="title_policy">개인정보의 파기절차 및 방법에 관한 사항</dt>
+						<dd class="desc_policy">
+							<ul class="list_policy_desc">
+								<li>
+									<span>회사는 원칙적으로 개인정보 수집 및 이용목적이 달성된 후에는 다음과 같은 방법으로 해당정보를 지체없이 파기합니다</span>
+									<ul class="list_policy_depth">
+										<li>
+											<i>1)</i>
+											<span>종이에 출력된 개인정보: 분쇄기로 분쇄하거나 소각을 통하여 폐기</span>
+										</li>
+										<li>
+											<i>2)</i>
+											<span>전자적 파일형태로 저장된 개인정보: 기록을 재생할 수 없는 기술적 방법을 사용하여 영구 삭제</span>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</dd>
+					</dl>
+					<dl class="item_policy">
+						<dt class="title_policy">개인정보의 제 3자 제공에 관한 사항</dt>
+						<dd class="desc_policy">
+							<ul class="list_policy_desc">
+								<li>
+									<i>1)</i>
+									<span>회사는 고객이 제공한 개인정보를 고객의 동의 없이 개인정보취급 수탁자 이외의 제3자에게 제공할 수 없습니다. 다만, 다음의 경우에는 수집 목적 범위 내에서 제공할 수 있습니다.</span>
+									<ul class="list_policy_depth">
+										<li>
+											<i>①</i>
+											<span>법률에 특별한 규정이 있거나 법령상 의무를 준수하기 위하여 불가피한 경우</span>
+										</li>
+										<li>
+											<i>②</i>
+											<span>고객 또는 그 법정대리인이 의사표시를 할 수 없는 상태에 있거나 주소불명 등으로 사전 동의를 받을 수 없는 경우로서 명백히 고객 또는 제3자의 급박한 생명, 신체, 재산의 이익을 위하여 필요하다고 인정되는 경우</span>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<i>2)</i>
+									<span>회사가 상기 1)에 따라 고객의 동의를 받을 때에는 다음의 사항을 고객에게 알려야 하며, 다음의 사항을 변경하는 경우에도 이를 알리고 동의를 받아야 합니다.</span>
+									<ul class="list_policy_depth">
+										<li>
+											<i>①</i>
+											<span>개인정보를 제공받는 자</span>
+										</li>
+										<li>
+											<i>②</i>
+											<span>개인정보를 제공받는 자의 개인정보 이용 목적</span>
+										</li>
+										<li>
+											<i>③</i>
+											<span>제공하는 개인정보의 항목</span>
+										</li>
+										<li>
+											<i>④</i>
+											<span>개인정보를 제공받는 자의 개인정보 보유 및 이용 기간</span>
+										</li>
+										<li>
+											<i>⑤</i>
+											<span>동의를 거부할 권리가 있다는 사실 및 동의 거부에 따른 불이익이 있는 경우에는 그 불이익의 내용</span>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<i>3)</i>
+									<span>회사는 다음의 경우에는 상기 1), 2)의 목적 범위를 초과하여 제3자에게 정보를 제공할 수 있습니다.</span>
+									<ul class="list_policy_depth">
+										<li>
+											<i>①</i>
+											<span>고객으로부터 별도의 동의를 받는 경우</span>
+										</li>
+										<li>
+											<i>②</i>
+											<span>법률에 특별한 규정이 있는 경우</span>
+										</li>
+										<li>
+											<i>③</i>
+											<span>고객 또는 그 법정대리인이 의사표시를 할 수 없는 상태에 있거나 주소불명 등으로 사전 동의를 받을 수 없는 경우로서 명백히 고객 또는 제3자의 급박한 생명, 신체, 재산의 이익을 위하여 필요하다고 인정되는 경우</span>
+										</li>
+										<li>
+											<i>④</i>
+											<span>통계작성 및 학술연구 등의 목적을 위하여 필요한 경우로서 특정 개인을 알아볼 수 없는 형태로 개인정보를 제공하는 경우</span>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</dd>
+					</dl>
+					<dl class="item_policy">
+						<dt class="title_policy">개인정보의 위탁에 관한 사항</dt>
+						<dd class="desc_policy">
+							<ul class="list_policy_desc">
+								<li><span>회사는 효과적인 서비스 이행을 위해 다음과 같이 개인정보 취급을 위탁하고 있습니다.</span></li>
+								<li class="policy_table_wrap">
+									<!--[D] 모든 table 은 table_wrap -->
+									<div class="table_wrap">
+										<table class="common_table">
+											<colgroup>
+												<col width="15%" />
+												<col width="15%" />
+												<col width="40%" />
+												<col width="15%" />
+												<col width="15%" />
+											</colgroup>
+											<thead>
+												<tr>
+													<th scope="col">수탁업체</th>
+													<th scope="col">연락처</th>
+													<th scope="col">위탁업무</th>
+													<th scope="col">위탁항목</th>
+													<th scope="col">보유기간</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>삼성SDS</td>
+													<td>
+														<a tel="02)6155-3114">
+															02)6155
+															<br />
+															-3114
+														</a>
+													</td>
+													<td class="left" rowspan="2">
+														인터넷 홈페이지 유지보수
+														<br />
+														인터넷 홈페이지를 통한 개인정보의 수집, 관리
+													</td>
+													<td>-</td>
+													<td>
+														업무 완료 시
+														<br />
+														폐기
+													</td>
+												</tr>
+												<tr>
+													<td>
+														미라콤
+														<br />
+														아이앤씨
+													</td>
+													<td>
+														<a tel="02)2125-6800">
+															02)2125
+															<br />
+															-6800
+														</a>
+													</td>
+													<td>-</td>
+													<td>
+														업무 완료 시
+														<br />
+														폐기
+													</td>
+												</tr>
+												<tr>
+													<td>
+														가우리
+														<br />
+														커뮤니케이션
+													</td>
+													<td>
+														<a tel="02)3397-7865">
+															02)3397
+															<br />
+															-7865
+														</a>
+													</td>
+													<td>이벤트 진행 및 경품 발송</td>
+													<td>
+														이름,
+														<br />
+														휴대폰번호
+													</td>
+													<td>
+														업무 완료 시
+														<br />
+														폐기
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</li>
+							</ul>
+						</dd>
+					</dl>
+					<dl class="item_policy">
+						<dt class="title_policy">고객의 권리, 의무 및 그 행사방법에 관한 사항</dt>
+						<dd class="desc_policy">
+							<ul class="list_policy_desc">
+								<li>
+									<i>1)</i>
+									<span>개인정보 열람 요구권</span>
+									<ul class="list_policy_depth">
+										<li>
+											<i>①</i>
+											<span>고객은 회사가 처리하는 자신의 개인정보에 대한 열람을 요구할 수 있습니다</span>
+										</li>
+										<li>
+											<i>②</i>
+											<span>회사는 고객으로부터 열람을 요구받았을 때 10일 이내에 고객이 해당 개인정보를 열람할 수 있도록 하여야 합니다. 열람할 수 없는 정당한 사유가 있을 때에는 고객에게 그 사유를 알리고 열람을 연기할 수 있으며, 그 사유가 소멸하면 지체 없이 열람하게 하여야 합니다.</span>
+										</li>
+										<li>
+											<i>③</i>
+											<span>회사는 다음의 사유에 해당하는 경우에는 고객에게 그 사유를 알리고 열람을 제한하거나 거절할 수 있습니다.</span>
+											<ul class="list_policy_depth">
+												<li>
+													<i>&nbsp;-</i>
+													<span>법률에 따라 열람이 금지되거나 제한되는 경우</span>
+												</li>
+												<li>
+													<i>&nbsp;-</i>
+													<span>다른 사람의 생명, 신체를 해할 우려가 있거나 다른 사람의 재산과 그 밖의 이익을 부당하게 침해할 우려가 있는 경우</span>
+												</li>
+											</ul>
+										</li>
+										<li>
+											<i>④</i>
+											<span>회사는 고객의 열람을 연기하거나 제한ㆍ거절하고자 하는 경우에는 열람 요구를 받은 날부터 5일 이내에 연기 또는 제한ㆍ거절의 사유 및 고객이 이의를 제기할 수 있는 방법을 서면ㆍ전자우편ㆍ모사전송 등의 방법으로 고객에게 알립니다.</span>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<i>2)</i>
+									<span>개인정보 정정ㆍ삭제 요구권</span>
+									<ul class="list_policy_depth">
+										<li>
+											<i>①</i>
+											<span>고객은 회사에게 자기 개인정보의 정정 또는 삭제를 요구할 수 있습니다. 다만, 법령에서 그 개인정보가 수집 대상으로 명시되어 있는 경우에는 삭제를 요구할 수 없습니다.</span>
+										</li>
+										<li>
+											<i>②</i>
+											<span>회사는 고객이 자기 개인정보의 정정 또는 삭제를 요구할 경우 법령에 특별한 절차가 규정되어 있는 경우를 제외하고는 지체 없이 정정, 삭제 등 필요한 조치를 취한 후 그 결과를 고객에게 알려야 합니다.</span>
+										</li>
+										<li>
+											<i>③</i>
+											<span>회사가 개인정보를 삭제할 때에는 복구 또는 재생되지 않도록 조치하여야 합니다.</span>
+										</li>
+										<li>
+											<i>④</i>
+											<span>회사는 필요한 경우 해당 고객에게 정정, 삭제 요구사항의 확인에 필요한 증거자료를 제출하게 할 수 있습니다.</span>
+										</li>
+										<li>
+											<i>⑤</i>
+											<span>고객이 정정ㆍ삭제 요구한 개인정보가 다른 법령에서 그 개인정보가 수집대상으로 명시되어 있는 경우에 해당하여 삭제할 수 없는 경우 지체 없이 그 내용을 고객에게 알립니다.</span>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<i>3)</i>
+									<span>개인정보 처리정지 요구권</span>
+									<ul class="list_policy_depth">
+										<li>
+											<i>①</i>
+											<span>고객은 회사에게 자기 개인정보 처리의 정지를 요구할 수 있습니다.</span>
+										</li>
+										<li>
+											<i>②</i>
+											<span>회사는 고객이 자기 개인정보 처리의 정지를 요구할 경우 지체 없이 개인정보 처리의 전부를 정지하거나 일부를 정지하여야 합니다. 다만 다음의 경우에는 고객의 처리정지 요구를 거절할 수 있습니다.</span>
+											<ul class="list_policy_depth">
+												<li>
+													<i>&nbsp;-</i>
+													<span>법률에 특별한 규정이 있거나 법령상 의무를 준수하기 위하여 불가피한 경우</span>
+												</li>
+												<li>
+													<i>&nbsp;-</i>
+													<span>다른 사람의 생명, 신체를 해할 우려가 있거나 다른 사람의 재산과 그 밖의 이익을 부당하게 침해할 우려가 있는 경우</span>
+												</li>
+												<li>
+													<i>&nbsp;-</i>
+													<span>개인정보를 처리하지 아니하면 고객과 약정한 서비스를 제공하지 못하는 등 계약의 이행이 곤란한 경우로서 고객이 그 계약의 해지의사를 명확하게 밝히지 아니한 경우</span>
+												</li>
+											</ul>
+										</li>
+										<li>
+											<i>③</i>
+											<span>회사는 고객의 요구에 따라 처리가 정지된 개인정보에 대하여 지체없이 해당 개인정보의 파기 등 필요한 조치를 하여야 합니다.</span>
+										</li>
+										<li>
+											<i>④</i>
+											<span>회사가 개인정보의 처리정지 요구를 거절하였을 때에는 고객에게 지체없이 그 사유를 알립니다.</span>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</dd>
+					</dl>
+					<dl class="item_policy">
+						<dt class="title_policy">개인정보의 안전성 확보조치에 관한 사항</dt>
+						<dd class="desc_policy">
+							<ul class="list_policy_desc">
+								<li>
+									<span>회사는 개인정보가 분실, 도난, 유출, 변조, 훼손되지 않도록 기술적, 물리적, 관리적 보호조치를 취하고 있습니다.</span>
+									<ul class="list_policy_depth">
+										<li>
+											<i>1)</i>
+											<span>기술적 보호조치</span>
+											<ul class="list_policy_depth">
+												<li>
+													<i>①</i>
+													<span>접근권한 제한ㆍ관리, 접근권한 확인을 위한 식별ㆍ인증조치</span>
+												</li>
+												<li>
+													<i>②</i>
+													<span>권한없는 접근을 차단하기 위한 시스템의 설치 등 조치</span>
+												</li>
+												<li>
+													<i>③</i>
+													<span>개인정보의 안전한 저장ㆍ전송을 위한 암호화 등 조치</span>
+												</li>
+												<li>
+													<i>④</i>
+													<span>접속기록의 보관 및 위ㆍ변조 방지조치</span>
+												</li>
+												<li>
+													<i>⑤</i>
+													<span>보안프로그램의 설치 및 주기적 갱신ㆍ점검 조치</span>
+												</li>
+											</ul>
+										</li>
+										<li>
+											<i>2)</i>
+											<span>물리적 보호조치</span>
+											<ul class="list_policy_depth">
+												<li>
+													<i>①</i>
+													<span>출입통제ㆍ잠금장치 등</span>
+												</li>
+											</ul>
+										</li>
+										<li>
+											<i>3)</i>
+											<span>관리적 보호조치</span>
+											<ul class="list_policy_depth">
+												<li>
+													<i>①</i>
+													<span>내부관리계획의 수립ㆍ시행</span>
+												</li>
+												<li>
+													<i>②</i>
+													<span>소속직원 및 수탁자 등에 대한 교육계획 수립ㆍ실시</span>
+												</li>
+												<li>
+													<i>③</i>
+													<span>정기적 자체감사 실시</span>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</dd>
+					</dl>
+					<dl class="item_policy">
+						<dt class="title_policy">개인정보에 관한 민원서비스</dt>
+						<dd class="desc_policy">
+							<ul class="list_policy_desc">
+								<li>
+									<span>회사는 고객의 개인정보를 보호하고 개인정보와 관련한 불만을 처리하기 위하여 다음과 같이 개인정보 취급자 및 책임자를 지정, 운영하고 있습니다.</span>
+									<ul class="list_policy_depth">
+										<li>
+											<i>1)</i>
+											<span>개인정보 취급자</span>
+											<ul class="list_policy_depth">
+												<li>
+													<i>&nbsp;-</i>
+													<span>소속 : 커뮤니케이션팀</span>
+												</li>
+												<li>
+													<i>&nbsp;-</i>
+													<span>성명 : 이정민</span>
+												</li>
+												<li>
+													<i>&nbsp;-</i>
+													<span>직위 : 책임</span>
+												</li>
+												<li>
+													<i>&nbsp;-</i>
+													<span>
+														전화 :
+														<a tel="02-3774-7938">02-3774-7938</a>
+													</span>
+												</li>
+												<li>
+													<i>&nbsp;-</i>
+													<span>E-mail : andie.lee@samsung.com</span>
+												</li>
+											</ul>
+										</li>
+										<li>
+											<i>2)</i>
+											<span>개인정보 책임자</span>
+											<ul class="list_policy_depth">
+												<li>
+													<i>&nbsp;-</i>
+													<span>소속 : 준법감시인</span>
+												</li>
+												<li>
+													<i>&nbsp;-</i>
+													<span>성명 : 신승묵</span>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+								<li><span>고객께서는 회사의 서비스를 이용하시며 발생하는 모든 개인정보보호 관련 민원을 상기의 담당자 및 책임자에게 신고하실 수 있습니다. 회사는 지적된 문제를 즉시 확인하고 수정이 필요한 경우 최대한 빠른 시간내에 조치하도록 하겠습니다. 회사는 항상 고객의 개인정보를 보호하기 위하여 최선의 노력을 다하겠습니다. 기타 개인정보침해에 대한 신고나 상담이 필요하신 경우에는 아래로 문의하시기 바랍니다.</span></li>
+								<li>
+									<i>&nbsp;-</i>
+									<span>
+										개인정보침해신고센터 (
+										<a href="www.118.or.kr" target="_balnk">www.118.or.kr</a>
+										/
+										<a tel="118">118</a>
+										)
+									</span>
+								</li>
+								<li>
+									<i>&nbsp;-</i>
+									<span>
+										정보보호마크인증위원회 (
+										<a href="www.eprivacy.or.kr " target="_balnk">www.eprivacy.or.kr</a>
+										/
+										<a tel="02-580-0533">02-580-0533~4</a>
+										)
+									</span>
+								</li>
+								<li>
+									<i>&nbsp;-</i>
+									<span>
+										대검찰청 첨단범죄수사과 (
+										<a href="www.spo.go.kr " target="_balnk">www.spo.go.kr</a>
+										/
+										<a tel="02-3480-2000">02-3480-2000</a>
+										)
+									</span>
+								</li>
+								<li>
+									<i>&nbsp;-</i>
+									<span>
+										경찰청 사이버테러대응센터 (
+										<a href="www.ctrc.go.kr " target="_balnk">www.ctrc.go.kr</a>
+										/
+										<a tel="02-392-0330">02-392-0330</a>
+										)
+									</span>
+								</li>
+							</ul>
+						</dd>
+					</dl>
+				</div>
+			</main>
+			<!--footer-->
+			<footer id="footer">
+				<h1 class="blind">사이트 정보 영역</h1>
+				<ul class="list_policy">
+					<li><a>이용약관</a></li>
+					<li><a>개인정보 처리방침</a></li>
+				</ul>
+				<dl class="info_site txt_footer">
+					<dt class="blind">주소</dt>
+					<dd>
+						<strong class="blind">우편번호</strong>
+						<span>06620</span>
+						<strong class="blind">나머지 주소</strong>
+						<!--prettier-ignore-->
+						<span>서울특별시 서초구 서초대로74길 11<br>삼성자산운용 (16~18층)</span>
+					</dd>
+				</dl>
+				<!--prettier-ignore-->
+				<p class="txt_footer">콜센터 <a class="txt_footer" tel="080-377-4777">080-377-4777</a>(상담시간:평일 오전 8시~오후5시)</p>
+				<p class="txt_footer copy">&copy; SAMSUNG ASSET MANAGEMENT. ALL RIGHTS RESERVED</p>
+				<button class="btn_top fixed"><span class="blind">최상단 스크롤 이동하기</span></button>
+			</footer>
+			<!-- script-->
+			<script src="js/jquery-2.2.4.min.js"></script>
+			<script src="js/common.js"></script>
+			<script src="js/sub.js"></script>
+		</div>
+	</body>
+</html>

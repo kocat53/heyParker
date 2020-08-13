@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="viewport" content="initial-scale=1.0,user-scalable=no,maximum-scale=1.5,width=device-width,minimal-ui" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>삼성자산운용 펀드솔루션</title>
+		<meta name="keywords" content="펀드, 펀드솔루션, fund, 삼성자산운용 펀드솔루션, 펀드, 투자, 부자, 금융, 재테크, 환율, 삼성, 연금, 노후대비, FP, 적립식투자" />
+		<meta name="description" content="세상의 모든 투자, 쉽고 편하게, 삼성자산운용 펀드솔루션" />
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500&amp;display=swap&amp;subset=korean" />
+		<!--[D] 스크롤바 커스텀 CSS 추가-->
+		<link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css" />
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/common.css" />
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+	<body>
+		<!--skip 네비-->
+		<div id="skip">
+			<a href="#gnb">주메뉴 바로가기</a>
+			<a href="#contents">본문 바로가기</a>
+			<a href="#footer">사이트 정보 바로가기</a>
+		</div>
+		<div id="wrap">
+			<!-- 상단 공지-->
+			<!-- [D] 서브페이지 일 경우 sub 클래스 추가-->
+			<!-- header-->
+			<header class="sub" id="header">
+				<div class="inner">
+					<article class="header_main inner_content">
+						<h1 class="title_sub_page"><a href="#;">펀드비교</a></h1>
+						<a class="btn_sub_back" href="ci.html">
+							<i class="ico_back" aria-hidden="true"></i>
+							<span class="blind">뒤로가기</span>
+						</a>
+						<!-- 주메뉴 영역-->
+						<div class="gnb_wrap">
+							<!-- 상단-->
+							<div class="gnb_top">
+								<section class="user_menu clear inner_content">
+									<h1 class="blind">사용자 메뉴</h1>
+									<a class="link_main fl" href="#;"><span class="blind">메인 바로가기</span></a>
+									<ul class="list_user_menu fl">
+										<li><a href="#;">로그인</a></li>
+										<li><a href="#;">회원가입</a></li>
+										<li><a href="#;">MY 리스트</a></li>
+									</ul>
+									<!-- 사용자메뉴 버튼-->
+									<div class="user_menu_btn fr">
+										<a class="user_setting" href="#;"><span class="blind">설정 바로가기</span></a>
+										<!-- [D] 해당버튼 클릭시 .gnb_wrap 에 on 클래스가 제거됨-->
+										<button class="btn_close"><span class="blind">닫기</span></button>
+									</div>
+								</section>
+								<section class="gnb_search_form">
+									<h1 class="blind">검색영역</h1>
+									<div class="basic_search_wrap left">
+										<label class="blind" for="gnbSearch">검색어 입력하기</label>
+										<input class="common_search_input" type="text" placeholder="검색어를 입력해주세요." id="gnbSearch" />
+										<div class="btn_wrap">
+											<button class="gnb_search_del hide"><span class="blind">내용삭제</span></button>
+											<button class="btn_search xs"><span class="blind">검색</span></button>
+										</div>
+									</div>
+								</section>
+								<section class="gnb_fund_wrap inner_content">
+									<ul class="list_frame_content">
+										<!--prettier-ignore-->
+										<li><a class="blue" href="#;">테마별<br>펀드</a></li>
+										<!--prettier-ignore-->
+										<li><a class="blue" href="#;">국가별<br/>보기</a></li>
+										<!--prettier-ignore-->
+										<li><a class="blue" href="#;">노후대비<br/>연금펀드</a></li>
+										<!--prettier-ignore-->
+										<li><a class="view_all_fund" href="#;">모두<br/>보기</a></li>
+									</ul>
+								</section>
+								<!-- 배너-->
+								<a class="gnb_banner_wrap" href="#;"><img src="img/@tmp_banner_gnb.jpg" alt="펀드선택 결정장애는 펀드자판기로 해결하세요!" /></a>
+							</div>
+							<ul class="gub_list">
+								<li>
+									<a href="#;"><span class="name_gnb">은퇴솔루션</span></a>
+								</li>
+								<li class="inner_depth on">
+									<a href="#;"><span class="name_gnb gnb_new">지식PLUS</span></a>
+									<ul class="gnb_depth">
+										<li><a href="#;">펀드스토리</a></li>
+										<li><a href="#;">출퇴근 5분 경제</a></li>
+										<li><a href="#;">투자탐구생활</a></li>
+										<li><a href="#;">펀드TV</a></li>
+										<li><a href="#;">SERICEO</a></li>
+									</ul>
+								</li>
+								<li class="inner_depth">
+									<a href="#;"><span class="name_gnb">이벤트</span></a>
+									<ul class="gnb_depth">
+										<li><a href="#;">이벤트</a></li>
+										<li><a href="#;">사용후기</a></li>
+										<li><a href="#;">사용인증</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="#;"><span class="name_gnb">공지사항</span></a>
+								</li>
+							</ul>
+						</div>
+						<hr />
+					</article>
+				</div>
+			</header>
+			<!--비쥬얼 영역-->
+			<!-- main-->
+			<main id="container">
+				<!--[D] 비교 상품이 2개 이상일 경우 multiple 클래스 추가-->
+				<article class="diff_item_wrap">
+					<div class="inner">
+						<h2 class="blind">펀드 비교</h2>
+						<!-- 상단 펀드 목록-->
+						<article class="diff_item_list">
+							<h2 class="blind">펀드목록</h2>
+							<div class="box_item_wrap">
+								<ul class="diff_basic list_diff_item">
+									<li class="item_box">
+										<ul class="list_label">
+											<li><button class="btn_basic square line_blue xs">혼합형</button></li>
+											<li><button class="btn_basic square xs">글로벌 공격적자산배분</button></li>
+										</ul>
+										<strong class="name_item">NH-Amundi코리아2배인버스</strong>
+									</li>
+									<li class="item_box">
+										<ul class="list_label">
+											<li><button class="btn_basic square line_blue xs">혼합형</button></li>
+											<li><button class="btn_basic square xs">글로벌 공격적자산배분</button></li>
+										</ul>
+										<strong class="name_item">NH-Amundi코리아2배인버스레버리지증권투자신탁[주식-파생재간접형]ClassCe</strong>
+									</li>
+								</ul>
+							</div>
+						</article>
+						<!-- 상세 펀드 내용-->
+						<article class="diff_info_wrap">
+							<h2 class="blind">펀드 상세 내용</h2>
+							<div class="box_info_wrap">
+								<ul class="list_info_item">
+									<li>
+										<div class="diff_title_wrap"><strong class="title_info_category">펀드규모(운용펀드 기준)</strong></div>
+										<div class="diff_detail_wrap">
+											<ul class="diff_basic list_detail_info">
+												<li><span class="item_desc">350.1억원</span></li>
+												<li><span class="item_desc">350.1억원</span></li>
+											</ul>
+											<!--상세보기 -->
+										</div>
+									</li>
+									<li>
+										<div class="diff_title_wrap"><strong class="title_info_category">설정일</strong></div>
+										<div class="diff_detail_wrap">
+											<ul class="diff_basic list_detail_info">
+												<li><span class="item_desc">350.1억원</span></li>
+												<li><span class="item_desc">350.1억원</span></li>
+											</ul>
+											<!--상세보기 -->
+										</div>
+									</li>
+									<li>
+										<div class="diff_title_wrap"><strong class="title_info_category">기준가</strong></div>
+										<div class="diff_detail_wrap">
+											<ul class="diff_basic list_detail_info">
+												<li><span class="item_desc">350.1억원</span></li>
+												<li><span class="item_desc">350.1억원</span></li>
+											</ul>
+											<!--상세보기 -->
+										</div>
+									</li>
+									<li>
+										<div class="diff_title_wrap">
+											<strong class="title_info_category">3개월 수익률</strong>
+											<button class="btn_detail_info">
+												수익률 모두보기
+												<i class="ico_arrow" aria-hidden="true"></i>
+											</button>
+										</div>
+										<div class="diff_detail_wrap">
+											<ul class="diff_basic list_detail_info">
+												<li><span class="item_desc">350.1억원</span></li>
+												<li><span class="item_desc">350.1억원</span></li>
+											</ul>
+											<!--상세보기 -->
+											<div class="diff_detail_info">
+												<ul class="list_info_item">
+													<li>
+														<div class="diff_title_wrap"><strong class="title_info_category">1년 수익률</strong></div>
+														<div class="diff_detail_wrap">
+															<ul class="diff_basic list_detail_info">
+																<li><span class="item_desc">21.4%</span></li>
+																<li><span class="item_desc">21.4%</span></li>
+															</ul>
+														</div>
+													</li>
+													<li>
+														<div class="diff_title_wrap"><strong class="title_info_category">3년 수익률</strong></div>
+														<div class="diff_detail_wrap">
+															<ul class="diff_basic list_detail_info">
+																<li><span class="item_desc">-9.9%</span></li>
+																<li><span class="item_desc">-9.9%</span></li>
+															</ul>
+														</div>
+													</li>
+													<li>
+														<div class="diff_title_wrap"><strong class="title_info_category">연초후 수익률</strong></div>
+														<div class="diff_detail_wrap">
+															<ul class="diff_basic list_detail_info">
+																<li><span class="item_desc">21.8%</span></li>
+																<li><span class="item_desc">21.8%</span></li>
+															</ul>
+														</div>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="diff_title_wrap"><strong class="title_info_category">클래스 설정액</strong></div>
+										<div class="diff_detail_wrap">
+											<ul class="diff_basic list_detail_info">
+												<li><span class="item_desc">350.1억원</span></li>
+												<li><span class="item_desc">350.1억원</span></li>
+											</ul>
+											<!--상세보기 -->
+										</div>
+									</li>
+									<li>
+										<div class="diff_title_wrap"><strong class="title_info_category">제로인평가</strong></div>
+										<div class="diff_detail_wrap">
+											<ul class="diff_basic list_detail_info">
+												<li>
+													<!--[D] 1~5 까지 존재 (state1,state2,state3...)-->
+													<span class="class_state state3"><span class="blind">3등급</span></span>
+												</li>
+												<li>
+													<!--[D] 1~5 까지 존재 (state1,state2,state3...)-->
+													<span class="class_state state3"><span class="blind">3등급</span></span>
+												</li>
+											</ul>
+											<!--상세보기 -->
+										</div>
+									</li>
+									<li>
+										<div class="diff_title_wrap"><strong class="title_info_category">투자위험</strong></div>
+										<div class="diff_detail_wrap">
+											<ul class="diff_basic list_detail_info">
+												<li><span class="item_desc">350.1억원</span></li>
+												<li><span class="item_desc">350.1억원</span></li>
+											</ul>
+											<!--상세보기 -->
+										</div>
+									</li>
+									<li>
+										<div class="diff_title_wrap"><strong class="title_info_category">총보수</strong></div>
+										<div class="diff_detail_wrap">
+											<ul class="diff_basic list_detail_info">
+												<li>
+													<span class="item_desc">350.1억원</span>
+													<div class="diff_sub_wrap">
+														<a class="btn_preview" href="#;">
+															상세보기
+															<i class="ico_arrow" aria-hidden="true"></i>
+														</a>
+													</div>
+												</li>
+												<li>
+													<span class="item_desc">350.1억원</span>
+													<div class="diff_sub_wrap">
+														<a class="btn_preview" href="#;">
+															상세보기
+															<i class="ico_arrow" aria-hidden="true"></i>
+														</a>
+													</div>
+												</li>
+											</ul>
+											<!--상세보기 -->
+										</div>
+									</li>
+								</ul>
+							</div>
+						</article>
+					</div>
+				</article>
+			</main>
+			<!--footer-->
+			<!-- script-->
+			<script src="js/jquery-2.2.4.min.js"></script>
+			<!--[D] 스크롤바 커스텀 스크립트 추가-->
+			<script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+			<script src="js/common.js"></script>
+			<script src="js/sub.js"></script>
+		</div>
+	</body>
+</html>

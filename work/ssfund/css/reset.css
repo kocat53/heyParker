@@ -1,0 +1,290 @@
+@charset "UTF-8";
+/* css 수정 금지 scss로 진행 해야 합니다.*/
+/* 2019.10.04 Malgun PJS . YSW */
+::-webkit-scrollbar,
+*::-webkit-scrollbar {
+	display: none;
+	-webkit-overflow-scrolling: touch;
+}
+
+@font-face {
+	font-family: "notosans";
+	font-style: normal;
+	font-weight: 300;
+	src: url("../fonts/NotoSansKR-DemiLight.woff2") format("woff2"), url("../fonts/NotoSansKR-DemiLight.woff") format("woff");
+}
+
+@font-face {
+	font-family: "notosans";
+	font-style: normal;
+	font-weight: 400;
+	src: url("../fonts/NotoSansKR-Regular.woff2") format("woff2"), url("../fonts/NotoSansKR-Regular.woff") format("woff");
+}
+
+@font-face {
+	font-family: "notosans";
+	font-style: normal;
+	font-weight: 500;
+	src: url("../fonts/NotoSansKR-Medium.woff2") format("woff2"), url("../fonts/NotoSansKR-Medium.woff") format("woff");
+}
+
+@font-face {
+	font-family: "notosans";
+	font-style: normal;
+	font-weight: 600;
+	src: url("../fonts/NotoSansKR-Bold.woff2") format("woff2"), url("../fonts/NotoSansKR-Bold.woff") format("woff");
+}
+
+/* 190903 Malgun 박종상 */
+html {
+	-webkit-text-size-adjust: none;
+	-moz-text-size-adjust: none;
+	-ms-text-size-adjust: none;
+	font-size: 14px;
+}
+
+@media screen and (min-width: 768px) {
+	html {
+		font-size: 16px;
+	}
+}
+
+#wrap {
+	width: 100%;
+	overflow: hidden;
+	background-color: #edf1f4;
+}
+
+#wrap.fund_wrap {
+	background-color: #e2e5e7;
+}
+
+#wrap.notice_wrap {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	min-height: 100vh;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+}
+
+#wrap.notice_wrap #container {
+	-webkit-box-flex: 1;
+	-ms-flex: 1 1 auto;
+	flex: 1 1 auto;
+	background-color: #fff;
+}
+
+#wrap.notice_wrap #footer {
+	border-top: 10px solid #edf1f3;
+	margin-top: auto !important;
+}
+
+body, form, div, p, img, h1, h2, h3, h4, h5, h6, dl, dt, dd, ul, ol, li, th, td, table, input, textarea, button, select {
+	margin: 0;
+	padding: 0;
+	word-break: break-all;
+}
+
+body.no_scroll {
+	height: 100%;
+	overflow-y: hidden;
+}
+
+body, th, td, input, select, textarea, button {
+	font-family: 'notosans', sans-serif;
+	font-weight: 400;
+	font-size: 1rem;
+	color: #222;
+	line-height: 1.25;
+}
+
+article, aside, footer, header, section, nav, figure, menu {
+	display: block;
+}
+
+dl,
+ul,
+ol,
+li {
+	list-style: none;
+}
+
+em, i {
+	font-style: normal;
+}
+
+button {
+	outline: none;
+}
+
+a {
+	/* 임시 값 */
+	color: #222;
+	text-decoration: none;
+}
+
+a:hover, a:focus {
+	text-decoration: none;
+}
+
+address {
+	font-style: normal;
+	font-weight: normal;
+}
+
+input, textarea, select, button {
+	border: 0;
+	background-color: transparent;
+	vertical-align: middle;
+	border-radius: 0;
+}
+
+img {
+	vertical-align: top;
+	width: 100%;
+	border: 0;
+}
+
+hr {
+	display: none;
+}
+
+table {
+	width: 100%;
+	border-collapse: collapse;
+	border-spacing: 0;
+	background-color: #fff;
+	text-align: center;
+}
+
+input {
+	outline: none;
+}
+
+#skip {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 50;
+	width: 100%;
+	height: 0;
+}
+
+#skip a {
+	display: block;
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 1px;
+	height: 1px;
+	color: #fff;
+	text-align: center;
+}
+
+#skip a:hover, #skip a:focus {
+	z-index: 1000;
+	width: 100%;
+	height: auto;
+	padding: 10px 0;
+	background: #da291c;
+	color: #fff;
+}
+
+.dimmed {
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	z-index: 100;
+	background-color: rgba(0, 0, 0, 0.6);
+}
+
+.blind, .slick-dots > li > button {
+	position: absolute;
+	overflow: hidden;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	clip: rect(0, 0, 0, 0);
+}
+
+.ellipsis {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.line_cut2 {
+	display: -webkit-box;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	-webkit-box-orient: vertical;
+	word-wrap: break-word;
+	-webkit-line-clamp: 2;
+}
+
+.line_cut3 {
+	display: -webkit-box;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	-webkit-box-orient: vertical;
+	word-wrap: break-word;
+	-webkit-line-clamp: 3;
+}
+
+.line_cut4 {
+	display: -webkit-box;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	-webkit-box-orient: vertical;
+	word-wrap: break-word;
+	-webkit-line-clamp: 4;
+}
+
+.hide {
+	display: none !important;
+}
+
+.fl {
+	float: left;
+}
+
+.fr {
+	float: right;
+}
+
+.tc {
+	text-align: center !important;
+}
+
+.clear:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+#container {
+	overflow: hidden;
+}
+
+.mt25 {
+	margin-top: 1.786rem !important;
+}
+
+.slick-dots {
+	text-align: center;
+}
+
+.slick-dots > li {
+	display: inline-block;
+	opacity: 0.5;
+}
+
+.slick-dots > li.slick-active {
+	opacity: 1;
+}

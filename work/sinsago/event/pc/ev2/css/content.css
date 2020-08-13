@@ -1,0 +1,888 @@
+@charset "UTF-8";
+/* Malgun Web Standard Team PJS */
+/****************
+	컨텐츠 공통
+****************/
+/* 팝업 열릴시 전체 스크롤 X */
+body.no_scroll {
+  overflow: hidden;
+}
+
+#wrap {
+  min-width: 1280px;
+  position: relative;
+}
+
+.tc {
+  text-align: center;
+}
+
+/* 앱솔루트용 이미지 */
+.sticker_img {
+  position: absolute;
+  z-index: 2;
+}
+
+.layout_fluid {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+}
+
+.layout_fluid .middle {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.layout_fluid .top {
+  display: table-cell;
+  vertical-align: top;
+}
+
+/* 중앙정렬 컨텐츠 설정 */
+.evt_cont {
+  position: relative;
+  width: 1000px;
+  margin: 0 auto;
+}
+
+/* TOP 버튼 */
+.btn_top {
+  position: fixed;
+  right: 20px;
+  z-index: 2;
+  width: 50px;
+  height: 50px;
+  background: url(../img/btn_top.png) no-repeat;
+  -webkit-transition: all 0.75s ease;
+  transition: all 0.75s ease;
+  cursor: pointer;
+}
+
+/* 로고 */
+.logo {
+  position: absolute;
+  top: 24px;
+  right: 0;
+  z-index: 1;
+}
+
+.event_main {
+  overflow: hidden;
+  position: relative;
+  background: #39bcfb;
+  max-height: 1000px;
+  -webkit-transition: height ease-in-out 1.2s;
+  transition: height ease-in-out 1.2s;
+  -ms-transition: height ease-in-out 1.2s;
+}
+
+.event_main:before, .event_main:after {
+  position: absolute;
+  right: 0;
+  left: 0;
+  height: 106px;
+  background-image: url(../img/main_bg.png);
+  background-repeat: repeat-x;
+  content: '';
+}
+
+.event_main:before {
+  top: 0;
+}
+
+.event_main:after {
+  bottom: 0;
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.event_main.start {
+  height: 628px !important;
+}
+
+.event_main.start .main_label {
+  margin-top: -175px;
+}
+
+.event_main.start .main_car_area {
+  bottom: 0;
+}
+
+.event_main.start .car1 {
+  -webkit-animation: driving1 1s ease-in-out infinite alternate;
+          animation: driving1 1s ease-in-out infinite alternate;
+}
+
+.event_main.start .main_carr1 {
+  -webkit-animation: carBody .1s ease-in-out infinite alternate;
+          animation: carBody .1s ease-in-out infinite alternate;
+}
+
+.event_main.start .car1t {
+  -webkit-animation: carTire .1s ease-in-out infinite alternate;
+          animation: carTire .1s ease-in-out infinite alternate;
+}
+
+.event_main.start .car2 {
+  -webkit-animation: driving2 2s ease-in-out infinite alternate;
+          animation: driving2 2s ease-in-out infinite alternate;
+}
+
+.event_main.start .main_car2 {
+  -webkit-animation: carBody .2s ease-in-out infinite alternate;
+          animation: carBody .2s ease-in-out infinite alternate;
+}
+
+.event_main.start .car2t {
+  -webkit-animation: carTire 5s ease-in-out infinite alternate;
+          animation: carTire 5s ease-in-out infinite alternate;
+}
+
+.event_main.start .car3 {
+  -webkit-animation: late 5s 3s ease-in-out infinite alternate;
+          animation: late 5s 3s ease-in-out infinite alternate;
+}
+
+.event_main.start .main_car3 {
+  -webkit-animation: carBody .2s ease-in-out infinite alternate;
+          animation: carBody .2s ease-in-out infinite alternate;
+}
+
+.event_main.start .car3t {
+  -webkit-animation: carTire .3s ease-in-out infinite alternate;
+          animation: carTire .3s ease-in-out infinite alternate;
+}
+
+.event_main .animated {
+  text-align: center;
+  -webkit-transition: all ease-in 1s;
+  transition: all ease-in 1s;
+}
+
+.event_main .animated.main_title {
+  position: relative;
+  margin-top: 18px;
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
+}
+
+[class^=main_shine] {
+  opacity: 0;
+}
+
+.main_shine1 {
+  top: -24px;
+  left: 68px;
+  -webkit-animation: mainShine .8s 1.5s ease-in-out infinite alternate;
+          animation: mainShine .8s 1.5s ease-in-out infinite alternate;
+}
+
+.main_shine2 {
+  top: -10px;
+  left: 48px;
+  -webkit-transform: scale(0.6);
+      -ms-transform: scale(0.6);
+          transform: scale(0.6);
+  -webkit-animation: mainShine .8s 2.5s ease-in-out infinite alternate;
+          animation: mainShine .8s 2.5s ease-in-out infinite alternate;
+}
+
+.main_shine3 {
+  right: 51px;
+  bottom: 3px;
+  -webkit-transform: scale(0.7);
+      -ms-transform: scale(0.7);
+          transform: scale(0.7);
+  -webkit-animation: mainShine .8s 3s ease-in-out infinite alternate;
+          animation: mainShine .8s 3s ease-in-out infinite alternate;
+}
+
+.end_game .point_car1 {
+  -webkit-animation: endrace 1s cubic-bezier(0.25, 0.25, 0.535, 1.38) forwards;
+          animation: endrace 1s cubic-bezier(0.25, 0.25, 0.535, 1.38) forwards;
+}
+
+.end_game .main_point1 {
+  overflow: hidden;
+  -webkit-animation: mainPoing .5s infinite forwards;
+          animation: mainPoing .5s infinite forwards;
+}
+
+.end_game .main_point2 {
+  -webkit-animation: mainPoing .5s 1.5s infinite forwards;
+          animation: mainPoing .5s 1.5s infinite forwards;
+}
+
+.point_car1 {
+  position: relative;
+  bottom: 0;
+}
+
+@-webkit-keyframes endrace {
+  100% {
+    bottom: 300px;
+  }
+}
+
+@keyframes endrace {
+  100% {
+    bottom: 300px;
+  }
+}
+
+.car1_flag1 {
+  top: -34px;
+  right: 355px;
+  -webkit-transform-origin: 0 100%;
+      -ms-transform-origin: 0 100%;
+          transform-origin: 0 100%;
+  -webkit-animation: flagWage .5s infinite ease-in-out alternate;
+          animation: flagWage .5s infinite ease-in-out alternate;
+}
+
+.car1_flag2 {
+  top: -30px;
+  right: 569px;
+  -webkit-transform-origin: 100% 100%;
+      -ms-transform-origin: 100% 100%;
+          transform-origin: 100% 100%;
+  animation: flagWage2 .5s infinite ease-in-out alternate-reverse;
+}
+
+.main_point1 {
+  overflow: hidden;
+  top: 55px;
+  left: 310px;
+  -webkit-animation: mainPoing .5s infinite forwards;
+          animation: mainPoing .5s infinite forwards;
+}
+
+.main_point2 {
+  top: 55px;
+  right: 326px;
+  -webkit-animation: mainPoing .5s 1.5s infinite forwards;
+          animation: mainPoing .5s 1.5s infinite forwards;
+}
+
+@-webkit-keyframes flagWage {
+  100% {
+    -webkit-transform: rotateZ(13deg);
+            transform: rotateZ(13deg);
+  }
+}
+
+@keyframes flagWage {
+  100% {
+    -webkit-transform: rotateZ(13deg);
+            transform: rotateZ(13deg);
+  }
+}
+
+@-webkit-keyframes flagWage2 {
+  100% {
+    -webkit-transform: rotateZ(15deg);
+            transform: rotateZ(15deg);
+  }
+}
+
+@keyframes flagWage2 {
+  100% {
+    -webkit-transform: rotateZ(15deg);
+            transform: rotateZ(15deg);
+  }
+}
+
+@-webkit-keyframes mainPoing {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes mainPoing {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes mainShine {
+  to {
+    opacity: 1;
+  }
+  from {
+    opacity: 0;
+  }
+}
+
+@keyframes mainShine {
+  to {
+    opacity: 1;
+  }
+  from {
+    opacity: 0;
+  }
+}
+
+.main_car_area {
+  position: absolute;
+  bottom: -300px;
+  right: 0;
+  left: 0;
+  height: 400px;
+  z-index: 10;
+  -webkit-transition: all ease-in-out 1.5s;
+  transition: all ease-in-out 1.5s;
+}
+
+.main_car_area [class^=main_car] {
+  position: relative;
+  z-index: 4;
+}
+
+.main_car_area [class^=car] {
+  position: absolute;
+  text-align: center;
+}
+
+.main_car_area .car1 {
+  right: 0;
+  bottom: -112px;
+  left: 0;
+  z-index: 8;
+}
+
+.main_car_area .car1 .car1p {
+  top: -60px;
+  left: 0;
+  right: 3px;
+}
+
+.main_car_area .car1 .car1t {
+  bottom: 33px;
+  left: -18px;
+  right: 0;
+}
+
+.main_car_area .car2 {
+  bottom: -80px;
+  z-index: 3;
+  right: 90px;
+}
+
+.main_car_area .car2 .car2p {
+  top: -53px;
+  left: 0;
+  right: 5px;
+}
+
+.main_car_area .car2 .car2t {
+  bottom: 33px;
+  right: -30px;
+}
+
+.main_car_area .car3 {
+  bottom: -77px;
+  left: 80px;
+}
+
+.main_car_area .car3 .car3p {
+  top: -46px;
+  left: -10px;
+  right: 0px;
+}
+
+.main_car_area .car3 .car3t {
+  bottom: 33px;
+  left: -34px;
+}
+
+@-webkit-keyframes carTire {
+  from {
+    -webkit-transform: translateY(1.5px);
+            transform: translateY(1.5px);
+  }
+}
+
+@keyframes carTire {
+  from {
+    -webkit-transform: translateY(1.5px);
+            transform: translateY(1.5px);
+  }
+}
+
+@-webkit-keyframes carBody {
+  from {
+    -webkit-transform: translateY(1.5px);
+            transform: translateY(1.5px);
+  }
+}
+
+@keyframes carBody {
+  from {
+    -webkit-transform: translateY(1.5px);
+            transform: translateY(1.5px);
+  }
+}
+
+@-webkit-keyframes driving2 {
+  from {
+    -webkit-transform: translateX(-20px);
+            transform: translateX(-20px);
+  }
+}
+
+@keyframes driving2 {
+  from {
+    -webkit-transform: translateX(-20px);
+            transform: translateX(-20px);
+  }
+}
+
+@-webkit-keyframes driving1 {
+  0% {
+    -webkit-transform: translateX(-30px);
+            transform: translateX(-30px);
+  }
+  100% {
+    -webkit-transform: translateX(-5px);
+            transform: translateX(-5px);
+  }
+}
+
+@keyframes driving1 {
+  0% {
+    -webkit-transform: translateX(-30px);
+            transform: translateX(-30px);
+  }
+  100% {
+    -webkit-transform: translateX(-5px);
+            transform: translateX(-5px);
+  }
+}
+
+@-webkit-keyframes late {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  25% {
+    -webkit-transform: scale(1.1) translate(-20px, 0);
+            transform: scale(1.1) translate(-20px, 0);
+  }
+  40% {
+    -webkit-transform: scale(0.9) translate(10px, 0);
+            transform: scale(0.9) translate(10px, 0);
+  }
+  50% {
+    -webkit-transform: scale(0.9) translate(-10px, 0);
+            transform: scale(0.9) translate(-10px, 0);
+  }
+  100% {
+    -webkit-transform: scale(1) translate(0, 0);
+            transform: scale(1) translate(0, 0);
+  }
+}
+
+@keyframes late {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  25% {
+    -webkit-transform: scale(1.1) translate(-20px, 0);
+            transform: scale(1.1) translate(-20px, 0);
+  }
+  40% {
+    -webkit-transform: scale(0.9) translate(10px, 0);
+            transform: scale(0.9) translate(10px, 0);
+  }
+  50% {
+    -webkit-transform: scale(0.9) translate(-10px, 0);
+            transform: scale(0.9) translate(-10px, 0);
+  }
+  100% {
+    -webkit-transform: scale(1) translate(0, 0);
+            transform: scale(1) translate(0, 0);
+  }
+}
+
+/****************
+	컨텐츠
+****************/
+.box_my_ranking {
+  background-color: #fa4946;
+  padding-bottom: 72px;
+}
+
+.box_my_ranking .ranking_wrap {
+  -webkit-box-shadow: 10px 11px 19px #f6201e;
+          box-shadow: 10px 11px 19px #f6201e;
+  background-color: #fff;
+  padding: 48px 73px;
+  margin: 0 20px;
+}
+
+.list_all_ranking {
+  margin-left: -10px;
+}
+
+.list_all_ranking > li {
+  display: table-cell;
+  width: 196px;
+  padding-left: 10px;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.list_all_ranking .ranking_inner {
+  border: 1px solid #bbb;
+}
+
+.list_all_ranking .title_my_ranking {
+  display: block;
+  height: 54px;
+  padding: 18px 0 0;
+  margin: -1px;
+  background-color: #39bcfb;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.list_all_ranking .box_ranking {
+  padding: 11px 0 9px;
+}
+
+.list_all_ranking .box_ranking .ico_trophy {
+  margin: 0 17px 0 -7px;
+}
+
+.list_all_ranking .box_ranking > span {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 18px;
+  color: #666;
+}
+
+.list_all_ranking .box_ranking > span strong {
+  display: inline-block;
+  margin: -1px 3px 0 0;
+  font-size: 26px;
+  color: #000;
+}
+
+.list_all_ranking .box_ranking > span i {
+  display: inline-block;
+  margin-top: 7px;
+  vertical-align: top;
+}
+
+.list_ranking {
+  padding: 9px 0 11px;
+  margin-top: 29px;
+  border: 2px solid #fa4946;
+  text-align: center;
+}
+
+.list_ranking > li {
+  position: relative;
+  left: -16px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.list_ranking > li > * {
+  vertical-align: middle;
+}
+
+.list_ranking > li > i {
+  display: inline-block;
+  margin: 1px 8px 0 0;
+}
+
+.list_ranking > li strong {
+  font-size: 22px;
+  color: #000;
+}
+
+.list_ranking > li span {
+  display: inline-block;
+  margin-left: 3px;
+  font-size: 25px;
+  color: #ff2b27;
+}
+
+.list_ranking > li + li {
+  margin-left: 27px;
+  padding-left: 27px;
+}
+
+.list_ranking > li + li:before {
+  position: absolute;
+  top: 11px;
+  left: 0;
+  bottom: 9px;
+  width: 2px;
+  background-color: #afafaf;
+  content: '';
+}
+
+.sns_url_area {
+  display: inline-table;
+  position: relative;
+  width: 100%;
+  padding: 0 60px;
+  margin-top: 30px;
+  table-layout: fixed;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.sns_url_area > div {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.list_sns_url {
+  padding-right: 11px;
+}
+
+.list_sns_url > label {
+  display: block;
+  width: 100%;
+}
+
+.list_sns_url > label + label {
+  margin-top: 5px;
+}
+
+.list_sns_url .basic_form {
+  display: block;
+  width: 100%;
+  padding: 11px 29px;
+  border: 1px solid #ddd;
+  background-color: #f2f2f2;
+  line-height: 1.1;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 18px;
+}
+
+.list_sns_url .basic_form:focus {
+  background-color: #e2e2e2;
+}
+
+.sns_btn_area {
+  background-color: #fa423e;
+  cursor: pointer;
+}
+
+.sns_btn_area:hover {
+  background-color: #f03733;
+}
+
+.sns_btn_area button {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.box_top100 {
+  background-color: #39bcfb;
+  padding-bottom: 60px;
+}
+
+.tab_ranking {
+  padding: 0 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-left: -2px;
+}
+
+.tab_ranking > li {
+  display: table-cell;
+  vertical-align: middle;
+  padding-left: 2px;
+}
+
+.tab_ranking > li.on .rank_tab {
+  background-color: #fd3d3a;
+}
+
+.tab_ranking > li.on .rank_tab.tab_king {
+  background-image: url(../img/tab-king-on.png);
+}
+
+.tab_ranking > li.on .rank_tab.tab_target {
+  background-image: url(../img/tab-target-on.png);
+}
+
+.tab_ranking > li.on .rank_tab.tab_number {
+  background-image: url(../img/tab-number-on.png);
+}
+
+.tab_ranking > li.on .rank_tab.tab_diff {
+  background-image: url(../img/tab-diff-on.png);
+}
+
+.tab_ranking > li .rank_tab {
+  display: block;
+  width: 100%;
+  height: 64px;
+  background-color: #0a8ecd;
+  background-repeat: no-repeat;
+  background-position: center;
+  outline: none;
+}
+
+.tab_ranking > li .rank_tab.tab_king {
+  background-image: url(../img/tab-king.png);
+}
+
+.tab_ranking > li .rank_tab.tab_target {
+  background-image: url(../img/tab-target.png);
+}
+
+.tab_ranking > li .rank_tab.tab_number {
+  background-image: url(../img/tab-number.png);
+}
+
+.tab_ranking > li .rank_tab.tab_diff {
+  background-image: url(../img/tab-diff.png);
+}
+
+.list_ranking_wrap {
+  padding: 19px 16px 19px 26px;
+  margin: 0 22px 0 20px;
+  background-color: #fff;
+  border: 4px solid #fd3d3a;
+}
+
+.rank_wrap {
+  overflow: hidden;
+  counter-reset: rank_container;
+}
+
+.rank_wrap > div:first-child li:nth-child(-n+9):before {
+  content: "00" counter(rank_container);
+}
+
+.rank_wrap > div:nth-child(5) li:nth-child(20):before {
+  content: counter(rank_container);
+}
+
+.rank_wrap .lank_list_wrap {
+  width: 172px;
+  height: 500px;
+  float: left;
+}
+
+.rank_wrap .lank_list_wrap + .lank_list_wrap {
+  margin-left: 10px;
+}
+
+.list_ranker {
+  position: relative;
+  height: 100%;
+  border-radius: 10px;
+  background-color: #ffe9ea;
+  padding: 9px 17px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.list_ranker:before {
+  position: absolute;
+  top: 16px;
+  bottom: 13px;
+  left: 53px;
+  width: 1px;
+  background: #fec8c8;
+  content: '';
+}
+
+.list_ranker.rank_blue {
+  background-color: #d9f3ff;
+}
+
+.list_ranker.rank_blue:before {
+  background-color: #b6dff3;
+}
+
+.list_ranker.rank_yellow {
+  background-color: #fffcd3;
+}
+
+.list_ranker.rank_yellow:before {
+  background-color: #ece394;
+}
+
+.list_ranker.rank_green {
+  background-color: #d6f9cf;
+}
+
+.list_ranker.rank_green:before {
+  background-color: #aee8a3;
+}
+
+.list_ranker.rank_beige {
+  background-color: #ffe6d1;
+}
+
+.list_ranker.rank_beige:before {
+  background-color: #f9ccb5;
+}
+
+.list_ranker > li {
+  font-size: 14px;
+  color: #333;
+  line-height: 24px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.list_ranker > li:before {
+  margin-right: 29px;
+  counter-increment: rank_container;
+  content: "0" counter(rank_container);
+}
+
+/****************
+	푸터
+****************/
+.footer {
+  padding: 50px 0 50px;
+  background-color: #f2f2f2;
+}
+
+.footer .evt_cont {
+  position: relative;
+  left: 27px;
+  padding-left: 25px;
+  text-align: left;
+}
+
+.footer_notice {
+  margin: 17px 0 28px;
+}
+
+.footer_notice li {
+  color: #888;
+  font-size: 15px;
+  line-height: 1.8;
+  letter-spacing: -0.05em;
+}
+
+.check_myinfo {
+  position: absolute;
+  top: -2px;
+  left: 201px;
+  z-index: 1;
+}

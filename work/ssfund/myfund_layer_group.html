@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="viewport" content="initial-scale=1.0,user-scalable=no,maximum-scale=1.5,width=device-width,minimal-ui" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>삼성자산운용 펀드솔루션</title>
+		<meta name="keywords" content="펀드, 펀드솔루션, fund, 삼성자산운용 펀드솔루션, 펀드, 투자, 부자, 금융, 재테크, 환율, 삼성, 연금, 노후대비, FP, 적립식투자" />
+		<meta name="description" content="세상의 모든 투자, 쉽고 편하게, 삼성자산운용 펀드솔루션" />
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500&amp;display=swap&amp;subset=korean" />
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/common.css" />
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+	<body>
+		<!--skip 네비-->
+		<div id="skip">
+			<a href="#gnb">주메뉴 바로가기</a>
+			<a href="#contents">본문 바로가기</a>
+			<a href="#footer">사이트 정보 바로가기</a>
+		</div>
+		<div id="wrap">
+			<!-- 상단 공지-->
+			<!-- [D] 서브페이지 일 경우 sub 클래스 추가-->
+			<!-- header-->
+			<header class="sub" id="header">
+				<div class="inner">
+					<article class="header_main inner_content">
+						<h1 class="title_sub_page"><a href="#;">MY 리스트</a></h1>
+						<a class="btn_sub_back" href="ci.html">
+							<i class="ico_back" aria-hidden="true"></i>
+							<span class="blind">뒤로가기</span>
+						</a>
+						<!-- 우측 버튼 2종 영역-->
+						<!-- [D] btn_open_form 클릭시  header_btn_wrap 에 on 클래스로 보여짐이 제어됨-->
+						<div class="header_btn_wrap">
+							<button class="header_search xs btn_search btn_open_form"><span class="blind">검색</span></button>
+							<div class="header_search_form">
+								<label class="blind" for="hd_input_form">검색어 입력</label>
+								<input class="del_toggle" type="text" id="hd_input_form" placeholder="검색어를 입력해주세요. " />
+								<button class="btn_input_delete hide"><i class="blind">검색어 삭제후 다시 입력하기</i></button>
+							</div>
+							<button class="header_search xs btn_search btn_form_search"><span class="blind">검색</span></button>
+							<button class="header_search_close btn_close"><span class="blind">검색영역 닫기</span></button>
+							<!-- [D] 해당버튼 클릭시 .gnb_wrap 에 on 클래스가 추가됨-->
+							<button class="header_all_meun xs btn_hambuger">
+								<i aria-hidden="true"></i>
+								<span class="blind">전체메뉴 보기</span>
+							</button>
+						</div>
+						<!-- 주메뉴 영역-->
+						<div class="gnb_wrap">
+							<!-- 상단-->
+							<div class="gnb_top">
+								<section class="user_menu clear inner_content">
+									<h1 class="blind">사용자 메뉴</h1>
+									<a class="link_main fl" href="#;"><span class="blind">메인 바로가기</span></a>
+									<ul class="list_user_menu fl">
+										<li><a href="#;">로그인</a></li>
+										<li><a href="#;">회원가입</a></li>
+										<li><a href="#;">MY 리스트</a></li>
+									</ul>
+									<!-- 사용자메뉴 버튼-->
+									<div class="user_menu_btn fr">
+										<a class="user_setting" href="#;"><span class="blind">설정 바로가기</span></a>
+										<!-- [D] 해당버튼 클릭시 .gnb_wrap 에 on 클래스가 제거됨-->
+										<button class="btn_close"><span class="blind">닫기</span></button>
+									</div>
+								</section>
+								<section class="gnb_search_form">
+									<h1 class="blind">검색영역</h1>
+									<div class="basic_search_wrap left">
+										<label class="blind" for="gnbSearch">검색어 입력하기</label>
+										<input class="common_search_input" type="text" placeholder="검색어를 입력해주세요." id="gnbSearch" />
+										<div class="btn_wrap">
+											<button class="gnb_search_del hide"><span class="blind">내용삭제</span></button>
+											<button class="btn_search xs"><span class="blind">검색</span></button>
+										</div>
+									</div>
+								</section>
+								<section class="gnb_fund_wrap inner_content">
+									<ul class="list_frame_content">
+										<!--prettier-ignore-->
+										<li><a class="blue" href="#;">테마별<br>펀드</a></li>
+										<!--prettier-ignore-->
+										<li><a class="blue" href="#;">국가별<br/>보기</a></li>
+										<!--prettier-ignore-->
+										<li><a class="blue" href="#;">노후대비<br/>연금펀드</a></li>
+										<!--prettier-ignore-->
+										<li><a class="view_all_fund" href="#;">모두<br/>보기</a></li>
+									</ul>
+								</section>
+								<!-- 배너-->
+								<a class="gnb_banner_wrap" href="#;"><img src="img/@tmp_banner_gnb.jpg" alt="펀드선택 결정장애는 펀드자판기로 해결하세요!" /></a>
+							</div>
+							<ul class="gub_list">
+								<li>
+									<a href="#;"><span class="name_gnb">은퇴솔루션</span></a>
+								</li>
+								<li class="inner_depth on">
+									<a href="#;"><span class="name_gnb gnb_new">지식PLUS</span></a>
+									<ul class="gnb_depth">
+										<li><a href="#;">펀드스토리</a></li>
+										<li><a href="#;">출퇴근 5분 경제</a></li>
+										<li><a href="#;">투자탐구생활</a></li>
+										<li><a href="#;">펀드TV</a></li>
+										<li><a href="#;">SERICEO</a></li>
+									</ul>
+								</li>
+								<li class="inner_depth">
+									<a href="#;"><span class="name_gnb">이벤트</span></a>
+									<ul class="gnb_depth">
+										<li><a href="#;">이벤트</a></li>
+										<li><a href="#;">사용후기</a></li>
+										<li><a href="#;">사용인증</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="#;"><span class="name_gnb">공지사항</span></a>
+								</li>
+							</ul>
+						</div>
+						<hr />
+					</article>
+				</div>
+			</header>
+			<!--비쥬얼 영역-->
+			<!-- main-->
+			<main id="container">
+				<!--[D] 해당 타입에서만 full_size 클래스추가..!-->
+				<article class="content_top_wrap full_size">
+					<ul class="list_content_tab">
+						<li class="on"><a class="btn_ct_tab" href="#">MY 펀드</a></li>
+						<li><a class="btn_ct_tab" href="#">MY 콘텐츠</a></li>
+					</ul>
+					<article class="my_list_wrap">
+						<!--타이틀-->
+						<div class="title_wrap">
+							<div class="img_my_list type_group" aria-hidden="true"></div>
+							<button class="title_my_list">
+								펀드 GROUP
+								<span class="blind">수정하기</span>
+								<span class="ico_pencil_white" aria-hidden="true"></span>
+							</button>
+						</div>
+						<!-- 타이틀 하단 옵션영역-->
+						<div class="item_option_group">
+							<div class="basic_select_box line">
+								<label for="selectmyList1">
+									<span class="name_select">전체</span>
+									<select class="basic_select" name="" id="selectmyList1">
+										<option value="전체">전체</option>
+										<option value="목록1">목록1</option>
+										<option value="목록2">목록2</option>
+										<option value="목록3">목록3</option>
+										<option value="목록4">목록4</option>
+									</select>
+									<i class="ico_arrow" aria-hidden="true"></i>
+								</label>
+							</div>
+						</div>
+						<!-- 카카오톡 공유-->
+						<div class="share_wrap">
+							<a class="ico_share share_kakao" href="#;"><span class="blind">카카오톡 공유</span></a>
+						</div>
+					</article>
+				</article>
+				<article class="content_main_wrap">
+					<article class="content_myList_wrap">
+						<h2 class="blind">펀드 목록</h2>
+						<!-- 타이틀-->
+						<div class="fund_list_title">
+							<div class="title_area">
+								<h3 class="title_list_fund">총 1,000개</h3>
+								<span class="title_sub_info">(2019.07.23 기준)</span>
+							</div>
+							<div class="title_option_area"><button class="btn_add_block">펀드추가</button></div>
+						</div>
+						<!-- 펀드 리스트-->
+						<div class="list_product">
+							<div class="box_fund">
+								<article class="item_info_wrap">
+									<h1 class="blind">펀드 정보</h1>
+									<!--  [D] 삼성자산 추천라벨-->
+									<section class="item_tag_wrap">
+										<span class="item_label">
+											삼성자산
+											<br />
+											추천
+										</span>
+										<!-- 라벨-->
+									</section>
+									<section class="option_wrap">
+										<article class="btn_wrap">
+											<button class="icon_btn_default btn_like on"><span class="blind">찜하기 버튼</span></button>
+											<button class="icon_btn_default"><span class="text_btn">비교</span></button>
+										</article>
+										<article class="label_wrap">
+											<h2 class="blind">특징 목록</h2>
+											<ul class="list_inline_label xs">
+												<li><span class="btn_basic square line_blue xs">혼합형</span></li>
+												<li class="span"><button class="btn_basic square xs">글로벌 공격적자산배분</button></li>
+											</ul>
+										</article>
+									</section>
+									<!-- 펀드명-->
+									<section class="item_name_wrap">
+										<h1 class="blind">상품명</h1>
+										<a class="name_fund" href="#;"><span>미래에셋퇴직플랜BRICs 업종대표40 증권자투자신탁1(채권혼합) 종류 업종대표40 증권자투자신탁1(채권혼합) 종류</span></a>
+									</section>
+									<!-- 수익률 및 차트-->
+									<section class="item_data_wrap">
+										<!-- 수익률-->
+										<section class="data_info">
+											<article class="fund_btn_wrap">
+												<h1 class="blind">펀드 상품 설정</h1>
+												<button class="icon_btn_default btn_like"><span class="blind">찜하기 버튼</span></button>
+												<button class="icon_btn_default on"><span class="text_btn">비교</span></button>
+											</article>
+											<article class="fund_data">
+												<strong class="blind">수익률</strong>
+												<p class="text_profits">
+													<em>999.9</em>
+													<span>%</span>
+												</p>
+												<strong class="blind">기준 데이터</strong>
+												<p class="text_profits_info">3개월 수익률</p>
+											</article>
+										</section>
+										<!-- 차트-->
+										<section class="chart_info">
+											<h1 class="blind">차트영역</h1>
+											<div class="fund_chart_wrap"><img src="img/@tmp_list_banner.png" alt="" /></div>
+										</section>
+									</section>
+								</article>
+							</div>
+							<!--더보기-->
+							<div class="more_btn_wrap">
+								<button class="btn_round_add blue"><span class="blind">더보기</span></button>
+							</div>
+						</div>
+					</article>
+					<article class="fixed_btn_wrap hide">
+						<button class="btn_fixed gary" type="button">선택해제</button>
+						<button class="btn_fixed blue" type="button">삭제</button>
+					</article>
+				</article>
+				<!-- [D] 레이어-->
+				<article class="fixed_layer_area on">
+					<div class="dimmed"></div>
+					<article class="fixed_layer_wrap">
+						<!-- 헤더-->
+						<header class="layer_header">
+							<div class="box_left_area">
+								<button class="arrow_back"><span class="blind">뒤로가기</span></button>
+							</div>
+							<div class="box_title_area"><h1 class="title_layer">펀드 GROUP 편집</h1></div>
+							<div class="box_right_area">
+								<!-- [D] 버튼 클릭시  line_blue 클래스 추가-->
+								<button class="btn_round_add type_group add_group"><span class="blind">그룹 추가하기</span></button>
+							</div>
+						</header>
+						<!-- 컨텐츠-->
+						<section class="layer_content">
+							<div class="fund_group_wrap">
+								<!-- 그룹 리스트-->
+								<ul class="list_fund_group">
+									<li><p class="name_group_item">기본그룹(3)</p></li>
+									<li>
+										<!-- 그룹목록-->
+										<div class="item_group split_item_wrap">
+											<div class="item_left">
+												<button class="name_group_item" type="button">
+													그룹명 01 (10)
+													<span class="blind">수정하기</span>
+												</button>
+											</div>
+											<div class="item_right">
+												<div class="edtie_btn_wrap">
+													<button class="btn_del" type="button"><span class="blind">그룹 삭제하기</span></button>
+												</div>
+											</div>
+										</div>
+									</li>
+									<li>
+										<!-- 그룹목록-->
+										<div class="item_group split_item_wrap">
+											<div class="item_left">
+												<button class="name_group_item" type="button">
+													그룹명 02 (10)
+													<span class="blind">수정하기</span>
+												</button>
+											</div>
+											<div class="item_right">
+												<div class="edtie_btn_wrap">
+													<button class="btn_del" type="button"><span class="blind">그룹 삭제하기</span></button>
+												</div>
+											</div>
+										</div>
+									</li>
+									<li>
+										<!-- 그룹목록-->
+										<div class="item_group split_item_wrap">
+											<div class="item_left">
+												<button class="name_group_item" type="button">
+													그룹명 03 (10)
+													<span class="blind">수정하기</span>
+												</button>
+											</div>
+											<div class="item_right">
+												<div class="edtie_btn_wrap">
+													<button class="btn_del" type="button"><span class="blind">그룹 삭제하기</span></button>
+												</div>
+											</div>
+										</div>
+									</li>
+									<li>
+										<!-- 그룹목록-->
+										<div class="item_group split_item_wrap">
+											<div class="item_left">
+												<button class="name_group_item" type="button">
+													그룹명 04 (10)
+													<span class="blind">수정하기</span>
+												</button>
+											</div>
+											<div class="item_right">
+												<div class="edtie_btn_wrap">
+													<button class="btn_del" type="button"><span class="blind">그룹 삭제하기</span></button>
+												</div>
+											</div>
+										</div>
+									</li>
+									<li>
+										<!-- 그룹목록-->
+										<div class="item_group split_item_wrap">
+											<div class="item_left">
+												<button class="name_group_item" type="button">
+													그룹명 05 (10)
+													<span class="blind">수정하기</span>
+												</button>
+											</div>
+											<div class="item_right">
+												<div class="edtie_btn_wrap">
+													<button class="btn_del" type="button"><span class="blind">그룹 삭제하기</span></button>
+												</div>
+											</div>
+										</div>
+									</li>
+									<li>
+										<!-- 그룹목록-->
+										<div class="item_group split_item_wrap">
+											<div class="item_left">
+												<button class="name_group_item" type="button">
+													그룹명 06 (10)
+													<span class="blind">수정하기</span>
+												</button>
+											</div>
+											<div class="item_right">
+												<div class="edtie_btn_wrap">
+													<button class="btn_del" type="button"><span class="blind">그룹 삭제하기</span></button>
+												</div>
+											</div>
+										</div>
+									</li>
+									<li>
+										<!-- 그룹목록-->
+										<div class="item_group split_item_wrap">
+											<div class="item_left">
+												<button class="name_group_item" type="button">
+													(그룹명 편집 샘플) (100)
+													<span class="blind">수정하기</span>
+												</button>
+											</div>
+											<div class="item_right">
+												<div class="edtie_btn_wrap">
+													<button class="btn_del" type="button"><span class="blind">그룹 삭제하기</span></button>
+												</div>
+											</div>
+										</div>
+										<!-- 그룹 편집-->
+										<div class="edit_item_group split_item_wrap">
+											<div class="item_left">
+												<div class="edit_wrap">
+													<label class="blind" for="grouptxtst1">그룹명 입력</label>
+													<input class="edit_input" type="text" id="grouptxtst1" value="그룹명 07" />
+												</div>
+											</div>
+											<div class="item_right">
+												<div class="edtie_btn_wrap">
+													<button class="btn_fix">취소</button>
+													<button class="btn_fix blue">확인</button>
+												</div>
+											</div>
+										</div>
+									</li>
+									<li>
+										<!-- 그룹목록-->
+										<div class="item_group split_item_wrap">
+											<div class="item_left">
+												<button class="name_group_item" type="button">
+													일이삼사오육칠팔구십팔구십팔구십팔구십팔 (100)
+													<span class="blind">수정하기</span>
+												</button>
+											</div>
+											<div class="item_right">
+												<div class="edtie_btn_wrap">
+													<button class="btn_del" type="button"><span class="blind">그룹 삭제하기</span></button>
+												</div>
+											</div>
+										</div>
+										<!-- 그룹 편집-->
+										<div class="edit_item_group split_item_wrap">
+											<div class="item_left">
+												<div class="edit_wrap">
+													<label class="blind" for="grouptxtst2">그룹명 입력</label>
+													<input class="edit_input" type="text" id="grouptxtst2" value="그룹명 07" />
+												</div>
+											</div>
+											<div class="item_right">
+												<div class="edtie_btn_wrap">
+													<button class="btn_fix">취소</button>
+													<button class="btn_fix blue">확인</button>
+												</div>
+											</div>
+										</div>
+									</li>
+								</ul>
+								<!-- 추가 및 안내영역-->
+								<div class="group_sub_wrap">
+									<!-- 그룹 추가-->
+									<div class="add_group_form split_item_wrap line hide">
+										<div class="item_left">
+											<div class="edit_wrap">
+												<label class="blind" for="grouptxt1">그룹명 입력</label>
+												<input class="edit_input" type="text" id="grouptxt1" maxlength="20" placeholder="그룹명을 20자 이내로 입력해주세요." />
+											</div>
+										</div>
+										<div class="item_right">
+											<div class="edtie_btn_wrap">
+												<button class="btn_fix">취소</button>
+												<button class="btn_fix blue">확인</button>
+											</div>
+										</div>
+									</div>
+									<!-- 안내사항-->
+									<ul class="list_group_notice">
+										<li>그룹추가는 최대 10개까지 가능합니다.</li>
+										<li>그룹당 30건의 상품 등록이 가능합니다.</li>
+									</ul>
+								</div>
+							</div>
+						</section>
+					</article>
+				</article>
+			</main>
+			<!--footer-->
+			<footer id="footer">
+				<h1 class="blind">사이트 정보 영역</h1>
+				<ul class="list_policy">
+					<li><a>이용약관</a></li>
+					<li><a>개인정보 처리방침</a></li>
+				</ul>
+				<dl class="info_site txt_footer">
+					<dt class="blind">주소</dt>
+					<dd>
+						<strong class="blind">우편번호</strong>
+						<span>06620</span>
+						<strong class="blind">나머지 주소</strong>
+						<!--prettier-ignore-->
+						<span>서울특별시 서초구 서초대로74길 11<br>삼성자산운용 (16~18층)</span>
+					</dd>
+				</dl>
+				<!--prettier-ignore-->
+				<p class="txt_footer">콜센터 <a class="txt_footer" tel="080-377-4777">080-377-4777</a>(상담시간:평일 오전 8시~오후5시)</p>
+				<p class="txt_footer copy">&copy; SAMSUNG ASSET MANAGEMENT. ALL RIGHTS RESERVED</p>
+				<button class="btn_top fixed"><span class="blind">최상단 스크롤 이동하기</span></button>
+			</footer>
+			<!-- script-->
+			<script src="js/jquery-2.2.4.min.js"></script>
+			<script src="js/slick.min.js"></script>
+			<script src="js/common.js"></script>
+			<script src="js/sub.js"></script>
+			<!-- [D] 개발자님!! 그룹 추가버튼 클릭시 추가 그릅명 입력하는 input에 포커스 처리 부탁드리겠습니다..!-->
+			<!-- 마크업 확인용-->
+			<script>
+				$(function() {
+					$(".btn_like").click(function() {
+						$(".fixed_layer_area").addClass("on");
+					});
+
+					$(".arrow_back").click(function() {
+						$(".fixed_layer_area").removeClass("on");
+					});
+
+					$(".name_group_item").click(function() {
+						$(this)
+							.parents("li")
+							.addClass("on");
+					});
+
+					$(".btn_fix").click(function() {
+						$(this)
+							.parents("li")
+							.removeClass("on");
+					});
+
+					$(".add_group").click(function() {
+						$(this).toggleClass("line_blue");
+						if ($(".add_group_form").hasClass("hide")) {
+							$(".add_group_form").removeClass("hide");
+							$(".edit_input").focus();
+						} else {
+							$(".add_group_form").addClass("hide");
+						}
+					});
+
+					$(".add_group_form .btn_fix").click(function() {
+						$(".add_group").removeClass("line_blue");
+						$(".add_group_form").addClass("hide");
+					});
+				});
+			</script>
+			<!-- 마크업 확인용.-->
+		</div>
+	</body>
+</html>

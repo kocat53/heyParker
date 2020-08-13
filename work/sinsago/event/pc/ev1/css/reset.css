@@ -1,0 +1,98 @@
+@charset "utf-8";
+/* Malgun Web Standard Team PJS */
+
+/* Common */
+a,body,button,dd,div,dl,dt,fieldset,form,h1,h2,h3,h4,h5,h6,input,legend,li,ol,p,select,table,td,textarea,th,ul,span {
+	margin: 0;
+	padding: 0;
+}
+
+body,button,input,select,table,textarea {
+	font-family: '맑은 고딕', Malgun Gothic, '나눔고딕', NanumGothic,'돋움', Dotum, Helvetica, AppleSDGothicNeo ,'새굴림' ,'New Gulim' ,Sans-serif;
+	font-size: 15px; /* 폰트 알아서 변경후 주석 제거*/
+	line-height: 1.6;
+	color: #666;
+}
+
+body {
+	overflow-y: scroll;
+	word-break: break-all;
+}
+
+/* html5 태그 설정 */
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {	display: block;}
+iframe,img { border: 0; }
+img {
+	max-width: 100%;
+	vertical-align: top;
+}
+
+ul,li,ol {
+	list-style: none;
+}
+
+address,em,i {
+	font-style: normal;
+}
+
+button,input,select {
+	border: 0;
+	border-radius: 0;
+	vertical-align: middle;
+	background: transparent;
+}
+
+button {
+	cursor: pointer;
+}
+
+button span {
+	position: relative;
+}
+
+.blind,caption,legend {
+	position: absolute;
+	overflow: hidden;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	clip: rect(0,0,0,0);
+}
+
+caption {
+	position: static;
+}
+
+input[type=password],
+input[type=text] {
+	vertical-align: middle;
+	border-radius: 0;
+	-webkit-appearance: none;
+	border: 0;
+}
+
+input[type=date]::-ms-clear,
+input[type=password]::-ms-clear,
+input[type=text]::-ms-clear { display: none; }
+textarea { -webkit-appearance: none; resize: none;}
+
+table {
+	width: 100%;
+	border-collapse: collapse;
+	border-spacing: 0;
+	table-layout: fixed;
+}
+
+/* Link */
+a:link,a:visited {
+	color: #000;
+	text-decoration: none;
+}
+
+a:active,a:focus,a:hover {
+	text-decoration: none;
+}
+
+.hide {
+	display: none !important;
+}

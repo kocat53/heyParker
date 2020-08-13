@@ -1,0 +1,333 @@
+﻿@charset "utf-8";
+/* Malgun Web Standard Team PJS */
+
+/****************
+	컨텐츠 공통
+****************/
+
+/* 팝업 열릴시 전체 스크롤 X */
+body.no_scroll {
+	overflow: hidden;
+}
+
+#wrap{
+	position: relative;
+	text-align: center;
+	min-width: 1050px;
+}
+
+.tc {
+	text-align: center;
+}
+
+/* 앱솔루트용 이미지 */
+.sticker_img {
+	position: absolute;
+	z-index: 2;
+}
+
+/* 중앙정렬 컨텐츠 설정 */
+.evt_cont {
+	position: relative;
+	width: 1000px;
+	margin: 0 auto;
+}
+
+/* 팝업	*/
+.evt_pop_area {
+	overflow-y: auto;
+	background: rgba(0,0,0,0.7);
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 9999;
+}
+
+/* TOP 버튼 */
+.btn_top{
+	position:fixed;
+	right:20px;
+	z-index:2;
+	width:50px;
+	height:50px;
+	background:url(../img/btn_top.png)no-repeat;
+	cursor:pointer;
+	transition:all 0.75s ease;
+}
+
+/* 로고 */
+.header h1{
+	position:absolute;
+	top:21px;
+	right:50%;
+	margin-right: -525px;
+	z-index:1;
+	width:120px;
+	height:35px;
+}
+
+/****************
+	컨텐츠
+****************/
+.main_title_area {
+	text-align: center;
+	background-color: #ffd131;
+}
+
+.main_title_area > .evt_cont {
+	position: relative;
+	overflow: hidden;
+	height: 810px;
+}
+
+/* 스크롤시 스르르 높이가 변경되기 위함 */
+/* .main_title_area > .evt_cont.on{
+	-ms-transition: height .5s ease-in-out;
+	transition: height .5s ease-in-out;
+} */
+
+/* 메인 타이틀 영역 */
+.main_title_img {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin: -110px 0 0 -450px;
+	transition: all ease 1s;
+	animation: 1s 2.5s main_Title_area forwards ease;
+}
+
+.main_title_img > div {
+	position: relative;
+	overflow: hidden;
+	margin: 0 auto;
+}
+
+/* 라벨 */
+.main_title_img .title_label {
+	width: 444px;
+	height: 0;
+	margin-bottom: -15px;
+	z-index: 2;
+	animation: titleUp .5s ease forwards;
+}
+
+/* 큰 텍스트 */
+.main_title_img .main_title {
+	width: 910px;
+	height: 0;
+	animation: titleUp2 1s .8s ease forwards;
+}
+
+@keyframes titleUp {
+	100% {height: 58px;}
+}
+
+@keyframes titleUp2 {
+	100% {height: 180px;}
+}
+
+@keyframes main_Title_area {
+	100% { margin-top: -310px;}
+}
+
+@-ms-keyframes titleUp {
+	100% {height: 58px;}
+}
+
+@-ms-keyframes titleUp2 {
+	100% {height: 180px;}
+}
+
+@-ms-keyframes main_Title_area {
+	100% { margin-top: -310px; }
+}
+
+/* 학생 옆  카드 */
+.card_area {
+	position: relative;
+	height: 100%;
+	padding: 0 40px;
+}
+
+/* 카드 기본설정 */
+[class*="main_card"] {
+	opacity: 0;
+	position: absolute;
+	z-index: 10;
+	width: 290px;
+	height: 158px;
+	padding-top: 38px;
+	background-color: #fff;
+	background-position: center;
+	border-radius: 30px;
+	box-shadow: 0px 5px 17px #ffb918;
+	box-sizing: border-box;
+	-ms-transform: translateY(300%);
+	transform: translateY(300%);
+}
+
+/* 딜레이를 위한 클래스 */
+.card_area.on [class*="main_card"] {
+	animation-name: up;
+	animation-fill-mode: forwards;
+	animation-timing-function: ease;
+	animation-duration: 1s;
+}
+
+.main_card1 {
+	animation-delay: 0.25s;
+}
+
+.main_card2 {
+	right: 40px;
+	animation-delay: 0.25s;
+}
+
+.main_card3 {
+	animation-delay: 0.45s;
+}
+
+.main_card4 {
+	left: 355px;
+	animation-delay: 0.45s;
+}
+
+.main_card5 {
+	left: 670px;
+	animation-delay: 0.45s;
+}
+
+.main_card_top {
+	bottom: 276px;
+}
+
+.main_card_bottom {
+	bottom: 89px;
+}
+
+[class*="main_card"] img {
+	position: relative;
+	z-index: 5;
+}
+
+.main_student {
+	bottom: 229px;
+	left: 50%;
+	margin-left: -132px;
+	opacity: 0;
+	-ms-transform: translateY(220%);
+	transform: translateY(220%);
+}
+
+/* 학생 애니메이션 설정 */
+.card_area.on .main_student {
+	animation: up 1.3s ease forwards;
+}
+
+/* 카드 올라가는 애니메이션 */
+@keyframes up {
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+		-ms-transform: translateY(0);
+	}
+}
+
+@-ms-keyframes up {
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+		-ms-transform: translateY(0);
+	}
+}
+
+/* 멘토 리스트 */
+.img_mento_list {
+	transition: all ease .5s;
+	position: relative;
+	padding: 84px 0 69px;
+}
+
+/* 삼각형 처리 */
+.img_mento_list:before {
+	position: absolute;
+	top: 0;
+	right: 50%;
+	width: 85px;;
+	height: 39px;
+	margin-right: -43px;
+	background: url(../img/arrow_bottom.png);
+	content: '';
+}
+
+.btn_counsel {
+	position: absolute;
+	bottom: 80px;
+	left: 50%;
+	margin-left: -215px;
+}
+
+.ico_check {
+	position: absolute;
+	top: 50%;
+	right: 44px;
+	margin-top: -28px;
+	-ms-animation: checkJumpMotion 1.5s ease-out .5s infinite normal;
+	animation: checkJumpMotion 1.5s ease-out .5s infinite normal;
+}
+
+/* 체크아이콘 점프 모션 */
+@keyframes checkJumpMotion{
+	0%{transform:translateY(0)}
+	20%{ transform:translateY(0)}
+	40%{ transform:translateY(-20px)}
+	50%{ transform:translateY(0) scaleY(.8)}
+	60%{ transform:translateY(-15px) scaleY(1)}
+	80%{ transform:translateY(0)}
+	100%{ transform:translateY(0)}
+}
+
+@-ms-keyframes checkJumpMotion{
+	0%{transform:translateY(0)}
+	20%{ transform:translateY(0)}
+	40%{ transform:translateY(-20px)}
+	50%{ transform:translateY(0) scaleY(.8)}
+	60%{ transform:translateY(-15px) scaleY(1)}
+	80%{ transform:translateY(0)}
+	100%{ transform:translateY(0)}
+}
+
+/****************
+	푸터
+****************/
+.footer {
+	padding: 45px 0 50px;
+	background-color: #f2f2f2;
+}
+
+.footer .evt_cont	{
+	padding-left: 25px;
+	text-align: left;
+	box-sizing: border-box;
+	position: relative;
+}
+
+.footer_notice {
+	margin: 26px 0 19px;
+}
+
+.footer_notice li {
+	color: #888;
+	font-size: 15px;
+	line-height: 1.8;
+	letter-spacing: -0.05em;
+}
+
+.check_myinfo {
+	position: absolute;
+    top: -2px;
+    left: 199px;
+    z-index: 1;
+}
